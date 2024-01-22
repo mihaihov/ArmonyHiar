@@ -6,6 +6,7 @@ import phoneIcon from './phoneIcon.svg';
 import mailIcon from './mailIcon.svg';
 import instagramColorIcon from './instagramColor.svg';
 import onlyLogoWhite from './LogoWhite.png';
+import armony1 from './Armony1.jpg';
 
 export {
     contactBackground,
@@ -15,5 +16,6 @@ export {
     phoneIcon,
     mailIcon,
     instagramColorIcon,
-    onlyLogoWhite
+    onlyLogoWhite,
+    armony1
 }
