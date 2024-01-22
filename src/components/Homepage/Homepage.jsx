@@ -10,20 +10,29 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);
 
+
 const Homepage = () => {
   const containerRef = useRef(null);
   const sectionRefs = useRef([useRef(null), useRef(null), useRef(null), useRef(null)]);
   const [visibleSection, setVisibleSection] = useState(null);
 
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        const isPhoneOrTablet = window.innerWidth <= 992;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibleSection(entry.target.getAttribute('id'));
-            gsap.to(entry.target, { opacity: 1, duration: 2 });
+            if (!isPhoneOrTablet) {
+              gsap.to(entry.target, { opacity: 1, duration: 2 });
+            } else {
+              entry.target.style.opacity = 1;
+            }
           } else {
-            gsap.to(entry.target, { opacity: 0.5, duration: 2 });
+            if (!isPhoneOrTablet) {
+              gsap.to(entry.target, { opacity: 0.5, duration: 2 });
+            }
           }
         });
       },
@@ -52,7 +61,12 @@ const Homepage = () => {
   const scrollToSection = (index) => {
     const targetSection = sectionRefs.current[index]?.current;
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+      const isPhoneOrTablet = window.innerWidth <= 992;
+      if (isPhoneOrTablet) {
+        window.scrollTo(0, targetSection.offsetTop);
+      } else {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -93,8 +107,7 @@ const Homepage = () => {
       </div>
 
 
-    <div id="section1" ref={sectionRefs.current[0]} className="section1">
-
+    <div id="section1" ref={sectionRefs.current[0]} className="section1"> 
    <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
     <div>469.396.9848</div>
     <div>vernessa@swankystylez.com</div>
