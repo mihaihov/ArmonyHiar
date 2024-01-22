@@ -1,18 +1,7 @@
-import { contactBackground } from "../assets";
-import { logo } from "../assets";
+import React from "react";
 
-const Contact = () => (
-  <div className="h-screen w-screen bg-cover bg-black">
-    <div
-      className="bg-cover h-screen w-screen opacity-75"
-      style={{ backgroundImage: `url(${contactBackground})` }}
-    >
-      <img
-        src={logo}
-        className="relative w-[300px] transform -translate-x-1/2 left-1/2 flex items-center pt-8"
-      />
-    </div>
-  </div>
-);
+const Contact = () => {
+  return <div>Contact</div>;
+};
 
 export default Contact;
