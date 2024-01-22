@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+:root {
+    --myFont: 'Libre Franklin';
+  }
+  .container {
+    width: 100%;
+    max-width: 100rem;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+.vertical-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+
+  }
+  
+  .nav-line {
+    width: 20px;
+    height: 5px;
+    background-color: rgb(116, 116, 116);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+  
+  .nav-line.active { transform:scaleX(160%) ;
+     background-color: #8fa99e; 
+}
+
+.section1, .section2, .section3, .section4 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.5),  
+                    rgba(0, 0, 0, 0.5)  
+                  ),
+                  url("../../../public/images/img1.jpg");
+background-size: fill;
+background-position: top right; }
+.section2 { background-color: white; }
+.section3 { background-color: white; }
+.section4 { background-color: white; }
+
+.centered-text {
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: white;
+    font-family:'Libre Franklin';
+    font-weight: 100;
+    letter-spacing:1rem;
+    mix-blend-mode: luminosity;
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3); 
+
+}
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0;  }
+    to { opacity: 1;  }
+}
+
+
+
+.fadeIn {
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 2s; 
+    animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+
+@keyframes fadeIn2 {
+    from { opacity: 0;  }
+    to { opacity: 1;  }
+}
+
+
+
+.fadeIn2 {
+    animation: fadeIn2 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+
+
+.mainTitle {
+    font-size: 10vw;
+    font-family:'Libre Franklin';
+    text-align: center;
+    color:#8fa99e;
+    text-transform: lowercase;
+    line-height: 1;
+
+
+}
+
+
+.section-content {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  
+  .logo-container {
+
+    width: 400px;
+    height: auto;
+    margin: 40px 70px; 
+    align-self: flex-end; 
+  }
+
+
+  .contact-container {
+   display:flex;
+   gap:1rem;
+   align-items:center;
+    color: white;
+    font-family:'Libre Franklin';;
+    font-size: 1rem;
+    align-self: flex-end; 
+    margin: 20px;
+  }
+
+  .contact-container div:nth-child(2) {
+
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding : 0 1rem;
+  }
+
+
+  .sectionTwoPhoto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionTwoPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sectionTwoContainer {
+     width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    gap:2rem;
+    padding: 0 10vw;
+    overflow: hidden;
+  }
+
+.subTitle {
+
+    text-align: center;
+    color: #606271;
+    font-family: "Antic", Sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0em;
+    letter-spacing: 10px; }
+
+
+    .sectionTwoText {
+
+
+        text-align: center;
+        color: #606271;
+        font-family: "Libre Franklin";
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+  .btnSection {
+
+    font-family: "Libre Franklin";
+    font-size: 1.2em;
+    text-transform: lowercase;
+    fill:#8fa99e;
+    color:#8fa99e;
+  }
+  .btnSection button {
+    background-color: #60627100;
+    border-style: solid;
+    border-width: 0px 2px 0px 2px;
+    border-color: #8fa99e;
+    padding: 1em;
+    border-radius: 8px  ;
+    transition: all 0.1s;
+
+}
+
+  .btnSection button:hover {
+    background-color: #8fa99e;
+    color:white;
+    transform: scale(110%);
+}
+
+.sectionTwoContent {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem;
+
+}
+
+
+
+@keyframes fadeIn3 {
+    from {
+        opacity: 0;
+        transform: translateX(100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+.fadeIn3 {
+    animation: fadeIn3 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+ 
+}
+
+
+@keyframes fadeIn4 {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+.fadeIn4 {
+    animation: fadeIn4 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+ 
+}
+
+.sectionThreeContainer {
+
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 65% 35%;
+    gap:2rem;
+    padding-left:  10vw;
+    overflow: hidden;
+}
+
+
+.sectionThreePhoto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionThreePhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .sectionThreeContent {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding-top: 10rem;
+
+}
+
+
+.sectionThreeText {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.sectionThreeText div {
+
+text-align: center;
+color:#8fa99e;
+font-family: "Libre Franklin";
+font-size: 2em;
+font-weight: 300; }
+
+
+@keyframes fadeIn5 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+
+}
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+.fadeIn5 {
+    animation: fadeIn5 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+   
+}
+
+
+.sectionFourContainer {
+    width: 100%;
+   height: 100%;
+   display:grid;
+   grid-template-columns: 30% 70%;
+   gap:2rem;
+   padding: 0 10vw;
+   overflow: hidden;
+ }
+
+
+
+.sectionFourContent {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem;
+
+}
+
+
+.sectionFourContent .mainTitle {
+
+    font-size: 8vw;
+    font-family:'Libre Franklin';
+    text-align: center;
+    color:#8fa99e;
+    text-transform: lowercase;
+    line-height: 1;
+
+}
+
+
+.inputs {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  gap:1rem;
+ 
+}
+
+.inputs input {
+     width: 100%;
+    border-radius: 5px;
+    border-bottom : 1px solid #8fa99e;
+padding: 0.5rem 1rem; }
+
+
+.contact-container4 {
+    display:flex;
+    gap:1rem;
+    align-items:center;
+     color: #071a12;
+     font-family:'Libre Franklin';
+     font-size: 1rem;
+     align-self: center; 
+     margin: 20px;
+   }
+
+   .info {
+
+    color: #071a12;
+     font-family:'Libre Franklin';
+     text-align: center;
+   }
