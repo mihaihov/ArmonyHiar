@@ -5,7 +5,13 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
