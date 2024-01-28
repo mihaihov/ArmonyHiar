@@ -6,11 +6,11 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-       <Router>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-            </Routes>
-        </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

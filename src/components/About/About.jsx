@@ -4,10 +4,10 @@ import {
   mailIcon,
   onlyLogoWhite,
   phoneIcon,
-} from "../assets";
-import { logo } from "../assets";
-import { logoWhite } from "../assets";
-import { instagramIcon } from "../assets";
+} from "../../assets";
+import { logo } from "../../assets";
+import { logoWhite } from "../../assets";
+import { instagramIcon } from "../../assets";
 
 const About = () => (
   <div className="relative top-0 left-0 h-screen w-screen bg-cover bg-black z-0">
