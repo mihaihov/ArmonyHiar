@@ -7,7 +7,8 @@ import mailIcon from './mailIcon.svg';
 import instagramColorIcon from './instagramColor.svg';
 import onlyLogoWhite from './LogoWhite.png';
 import armony1 from './Armony1.jpg';
-
+import armony2 from './Armony2.jpg';
+import armony3 from './Armony3.jpg'
 export {
     contactBackground,
     logo,
@@ -17,5 +18,7 @@ export {
     mailIcon,
     instagramColorIcon,
     onlyLogoWhite,
-    armony1
+    armony1,
+    armony2,
+    armony3
 }
