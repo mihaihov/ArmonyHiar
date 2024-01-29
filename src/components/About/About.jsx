@@ -19,10 +19,10 @@ const About = () => (
     <div className="bg-black h-screen w-screen z-0 relative">
       <div className="absolute bg-cover bg-fixed h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})` }}></div>
       <div className="absolute bg-cover bg-fiexed h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
-      <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-8">
+      <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
         <img src={logoWhite} className="w-[300px]" />
       </div>
-      <div className={`absolute flex flex-row bottom-0 left-1/2 -translate-x-1/2 lg:top-0 lg:right-0 lg:mt-8 lg:mr-8  z-2`}>
+      <div className={`relative flex flex-row justify-center bottom-0 lg:justify-end lg:mr-10 pt-5`}>
         <img src={phoneIcon} className="w-[24px] h-[24px] invisible sm:visible" />
         <p className="text-white pr-8 poppins text-sm">0784603428</p>
         <img src={mailIcon} className="w-[24px] h-[24px]  invisible sm:visible" />
@@ -36,7 +36,7 @@ const About = () => (
         <p className="text-white text-1xl font-serif text-center tracking-[.55em]">Hai sa ne cunosti</p>
       </div>
     </div>
-    <div className="w-full mt-10 flex">
+    <div className="w-full mt-10 flex flex-col lg:flex-row">
       <img src={armony2} className="object-none w-[65%] h-[800px]" />
       <div className="bg-slate-400 w-[65%] h-[500px] lg:-ml-96 lg:mt-96 shadow-lg flex flex-col items-end">
         <h1 className="pt-20 pr-10 text-5xl font-poppins text-white tracking-wider">Cine suntem noi?</h1>
