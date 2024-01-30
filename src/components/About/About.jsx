@@ -13,7 +13,7 @@ import { instagramIcon } from "../../assets";
 const About = () => (
   <div className="overflow-hidden relative">
     <div className="bg-black h-screen w-screen z-0 relative">
-      <div className="absolute bg-cover h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})` }}></div>
+      <div className="absolute bg-cover h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})`  ,  backgroundAttachment: 'fixed'  }}></div>
       <div className="absolute bg-cover h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
       <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-8">
         <img src={logoWhite} className="w-[300px]" />
