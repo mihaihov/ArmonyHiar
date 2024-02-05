@@ -3,7 +3,7 @@
 
 import React ,{ useEffect ,useState,useRef} from 'react';
 import "./Homepage.css";
-import { faInstagram} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
@@ -25,13 +25,13 @@ const Homepage = () => {
           if (entry.isIntersecting) {
             setVisibleSection(entry.target.getAttribute('id'));
             if (!isPhoneOrTablet) {
-              gsap.to(entry.target, { opacity: 1, duration: 2 });
+              gsap.to(entry.target, { opacity: 1, duration: 0.5 });
             } else {
               entry.target.style.opacity = 1;
             }
           } else {
             if (!isPhoneOrTablet) {
-              gsap.to(entry.target, { opacity: 0.5, duration: 2 });
+              gsap.to(entry.target, { opacity: 0.5, duration: 0.5 });
             }
           }
         });
@@ -109,8 +109,8 @@ const Homepage = () => {
 
     <div id="section1" ref={sectionRefs.current[0]} className="section1"> 
    <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-    <div>469.396.9848</div>
-    <div>vernessa@swankystylez.com</div>
+    <div>0784603428</div>
+    <div>armonyhair@gmail.com</div>
     <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
    </div>
 
@@ -120,7 +120,7 @@ const Homepage = () => {
       </div>
       </div>
       <div className={`logo-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-    <img src="../../../public/images/logo1.png" alt="logo" />
+    <img src="/images/Armony-White.png" alt="logo" />
   </div>
     </div>
     <div id="section2" ref={sectionRefs.current[1]} className="section2">
@@ -128,7 +128,7 @@ const Homepage = () => {
            <div className="sectionTwoContainer">
 
                   <div className={`sectionTwoPhoto ${visibleSection === 'section2' ? 'fadeIn2' : ''}`}>
-                    <img src="../../../public/images/img2.jpg" alt="photo" />
+                    <img src="/images/img2.jpg" alt="photo" />
                   </div>
                   <div className="sectionTwoContent"> 
                   
@@ -167,7 +167,7 @@ const Homepage = () => {
                  
                   </div>
    <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
-                    <img src="../../../public/images/img3.jpg" alt="photo" />
+                    <img src="/images/img3.jpg" alt="photo" />
                   </div>
    </div>
     </div>
@@ -175,7 +175,7 @@ const Homepage = () => {
     <div className="sectionFourContainer">
 
                   <div className={`sectionTwoPhoto ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-                    <img src="../../../public/images/img4.jpg" alt="photo" />
+                    <img src="/images/img4.jpg" alt="photo" />
                   </div>
                   <div className="sectionFourContent"> 
                   

@@ -48,7 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
+    /* transition: transform 0.1s ease-in-out; */
+
 }
 
 
@@ -101,9 +102,9 @@ background-position: top right; }
 
 
 .fadeIn {
-    animation: fadeIn 2s ease-in-out;
-    animation-delay: 2s; 
-    animation-fill-mode: forwards; 
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -117,7 +118,7 @@ background-position: top right; }
 
 .fadeIn2 {
     animation: fadeIn2 1s ease-in-out;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     opacity: 0;
 
@@ -159,8 +160,10 @@ background-position: top right; }
    gap:1rem;
    align-items:center;
     color: white;
-    font-family:'Libre Franklin';;
+    font-family:'Libre Franklin';
+    letter-spacing: 1px;
     font-size: 1rem;
+    font-weight: 700;
     align-self: flex-end; 
     margin: 20px;
   }
@@ -266,8 +269,8 @@ background-position: top right; }
 
 
 .fadeIn3 {
-    animation: fadeIn3 2s ease-in-out;
-    animation-delay: 1s;
+    animation: fadeIn3 1s ease-in-out;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     opacity: 0;
  
@@ -287,11 +290,11 @@ background-position: top right; }
 
 
 .fadeIn4 {
-    animation: fadeIn4 2s ease-in-out;
-    animation-delay: 1s;
+    animation: fadeIn4 1s ease-in-out;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     opacity: 0;
- 
+
 }
 
 .sectionThreeContainer {
@@ -359,11 +362,11 @@ font-weight: 300; }
 
 
 .fadeIn5 {
-    animation: fadeIn5 2s ease-in-out;
-    animation-delay: 1s;
+    animation: fadeIn5 1s ease-in-out;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     opacity: 0;
-   
+
 }
 
 
@@ -598,7 +601,7 @@ gap:1rem;
    overflow: hidden;
  }
 
- .fadeIn, .fadeIn2,.fadeIn3.fadeIn4, .fadeIn5 {
+ .fadeIn, .fadeIn2,.fadeIn3,.fadeIn4, .fadeIn5 {
   animation:none ;
   opacity: 1;
 
