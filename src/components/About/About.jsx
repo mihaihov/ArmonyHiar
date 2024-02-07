@@ -14,6 +14,18 @@ import { logoWhite } from "../../assets";
 import { instagramIcon } from "../../assets";
 import { styles } from '../../style';
 import { useState } from "react";
+import { testimonials } from "../../constants";
+import { contactInformation } from "../../constants";
+
+
+const TestimonialCard = ({ author, content }) => {
+  return (
+    <div className={`${styles.testimonialCard}`}>
+      <p className="text-[#abb8c3] font-poppins">{content}</p>
+      <h1 className="items-start pt-16 font-poppins text-xl">{author}</h1>
+    </div>
+  )
+}
 
 function About() {
   const [showMore, setShowMore] = useState(false)
@@ -33,10 +45,10 @@ function About() {
         </div>
         <div className={`relative flex flex-row justify-center bottom-0 lg:justify-end lg:mr-10 pt-5`}>
           <img src={phoneIcon} className="w-[24px] h-[24px] invisible sm:visible" />
-          <p className="text-white pr-8 poppins text-sm">0784603428</p>
+          <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
           <img src={mailIcon} className="w-[24px] h-[24px]  invisible sm:visible" />
-          <p className="text-white pr-8 poppins text-sm">armonyhair@gmail.com</p>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
+          <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
             <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
           </a>
         </div>
@@ -64,63 +76,25 @@ function About() {
         </div>
       </div>
       <h1 className="flex flex-row justify-center text-[#8fa99e] text-3xl lg:text-7xl font-poppins tracking-wide mt-16 mb-8 items-center">testimonials</h1>
-      <div className="relative flex flex-row justify-center">
-        <div className="pt-11 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center">
-          <div className={`${styles.testimonialCard}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          <div className={`${styles.testimonialCard}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          {/* start of hidden testimonials */}
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Raducu Mihai</h1>
-          </div>
-          <div className={`${styles.testimonialCard} ${showMore ? 'visible' : 'hidden'}`}>
-            <p className="text-[#abb8c3] font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil.</p>
-            <h1 className="items-start pt-16 font-poppins text-xl">Iulian Dragulescu</h1>
-          </div>
-          {/* end of hidden testimonials */}
+      <div className="relative flex flex-col items-center">
+        <div className="relative flex-row pt-11 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center">
+          {testimonials
+            .filter(testimonial => testimonial.alwaysVisible === 'true')
+            .map((testimonial, index) => (
+              <TestimonialCard key={testimonial.id} author={testimonial.author} content={testimonial.content} />
+            ))}
+        </div>
+        <div className={`${showMore ? 'transform scale-y-100 transition duration-500 origin-top' : 'transform scale-y-0 transition duration-500 origin-top'} mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center`}>
+          {testimonials
+            .filter(testimonial => testimonial.alwaysVisible === 'false' && showMore)
+            .map((testimonial, index) => (
+              <TestimonialCard key={testimonial.id} author={testimonial.author} content={testimonial.content} />
+            ))}
         </div>
         <div className={`${showMore ? 'hidden' : 'visible'} bg-gradient-to-t from-white absolute top-0 bottom-0 w-full h-full flex flex-row`} />
       </div>
       <div className="flex flex-col items-center">
-        <button className={`${styles.buttonSecondary} ${showMore ? 'translate-y-8 duration-700' : 'translate-y-0 duration-700'}`} onClick={handleShowMore}>{showMore ? 'Mai putin' : 'Mai mult'}</button>
+        <button className={`${styles.buttonSecondary} ${showMore ? 'transform translate-y-8 transition duraiton-700' : 'transform translate-y-0 transition duraiton-700'}`} onClick={handleShowMore}>{showMore ? 'Mai putin' : 'Mai mult'}</button>
         <div className={`${showMore ? 'mt-12' : 'mt-72'} flex flex-col justify-center items-center w-full`}>
           <h1 className="text-[#8fa99e] text-2xl tracking-wide lg:text-5xl lg:tracking-widest">navigare</h1>
           <div className="flex flex-row justify-center gap-8 lg:gap-0">
