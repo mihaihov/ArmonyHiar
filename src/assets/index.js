@@ -27,6 +27,6 @@ export {
     onlyLogoWhite,
     armony1,
     armony2,
-    armony3
-    bgService,p1,p2,p3,p4
+    armony3,
+    bgService, p1, p2, p3, p4
 }
