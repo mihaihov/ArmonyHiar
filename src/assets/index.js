@@ -14,6 +14,7 @@ import p1 from "./p1.jpg";
 import p2 from "./p2.jpg";
 import p3 from "./p3.jpg";
 import p4 from "./p4.jpg";
+import contactPageBackground_lg from './contactPageBackground_lg.jpg'
 
 
 export {
@@ -28,5 +29,6 @@ export {
     armony1,
     armony2,
     armony3,
-    bgService, p1, p2, p3, p4
+    bgService, p1, p2, p3, p4,
+    contactPageBackground_lg
 }
