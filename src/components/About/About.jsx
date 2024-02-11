@@ -53,7 +53,7 @@ function About() {
           </a>
         </div>
         <div className="absolute  inset-x-0 bottom-0 flex-col mb-32">
-          <p className="text-white text-8xl font-serif text-center">Noi suntem Armony</p>
+          <p className="text-white text-5xl md:text-6xl lg:text-8xl font-serif text-center">Noi suntem Armony</p>
           <p className="text-white text-1xl font-serif text-center tracking-[.55em]">Hai sa ne cunosti</p>
         </div>
       </div>
@@ -93,11 +93,11 @@ function About() {
         </div>
         <div className={`${showMore ? 'hidden' : 'visible'} bg-gradient-to-t from-white absolute top-0 bottom-0 w-full h-full flex flex-row`} />
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         <button className={`${styles.buttonSecondary} ${showMore ? 'transform translate-y-8 transition duraiton-700' : 'transform translate-y-0 transition duraiton-700'}`} onClick={handleShowMore}>{showMore ? 'Mai putin' : 'Mai mult'}</button>
         <div className={`${showMore ? 'mt-12' : 'mt-72'} flex flex-col justify-center items-center w-full`}>
           <h1 className="text-[#8fa99e] text-2xl tracking-wide lg:text-5xl lg:tracking-widest">navigare</h1>
-          <div className="flex flex-row justify-center gap-8 lg:gap-0">
+          <div className="flex flex-row justify-center gap-4 md:gap-8 lg:gap-0">
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 hover:text-[#8fa99e] cursor-pointer">Home</h1>
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 hover:text-[#8fa99e] cursor-pointer">About</h1>
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 hover:text-[#8fa99e] cursor-pointer">Services</h1>
