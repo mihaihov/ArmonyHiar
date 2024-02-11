@@ -1,6 +1,7 @@
 import contactBackground from './TestBackground1.jpg';
 import logo from './Logo.png'
 import logoWhite from './Armony-White.png'
+import logoBlack from './Armony-Black.png'
 import instagramIcon from './instagramIcon.svg';
 import phoneIcon from './phoneIcon.svg';
 import mailIcon from './mailIcon.svg';
@@ -30,5 +31,6 @@ export {
     armony2,
     armony3,
     bgService, p1, p2, p3, p4,
-    contactPageBackground_lg
+    contactPageBackground_lg,
+    logoBlack
 }
