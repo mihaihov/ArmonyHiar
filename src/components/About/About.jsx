@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { faExpeditedssl } from "@fortawesome/free-brands-svg-icons";
 import {
   contactBackground,
@@ -22,6 +23,7 @@ const About = () => (
       <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
       <div className="absolute bg-cover h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})`  ,  backgroundAttachment: 'fixed'  }}></div>
       <div className="absolute bg-cover h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
+     </div>
       <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-8">
         <img src={logoWhite} className="w-[300px]" />
       </div>
@@ -34,6 +36,7 @@ const About = () => (
           <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
         </a>
       </div>
+
       <div className="absolute  inset-x-0 bottom-0 flex-col mb-32">
         <p className="text-white text-8xl font-serif text-center">Noi suntem Armony</p>
         <p className="text-white text-1xl font-serif text-center tracking-[.55em]">Hai sa ne cunosti</p>

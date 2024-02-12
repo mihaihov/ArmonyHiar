@@ -4,11 +4,13 @@ import Homepage from "../src/components/Homepage/Homepage";
 import About from "../src/components/About/About";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import React from 'react'
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <div>
       <Router>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
