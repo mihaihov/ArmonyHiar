@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { faExpeditedssl } from "@fortawesome/free-brands-svg-icons";
 import {
   contactBackground,
@@ -18,39 +17,6 @@ import { useState } from "react";
 import { testimonials } from "../../constants";
 import { contactInformation } from "../../constants";
 
-const About = () => (
-  <div className="overflow-hidden relative">
-    <div className="bg-black h-screen w-screen z-0 relative">
-      <div className="absolute bg-cover bg-fixed h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})` }}></div>
-      <div className="absolute bg-cover bg-fiexed h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
-      <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
-      <div className="absolute bg-cover h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})`  ,  backgroundAttachment: 'fixed'  }}></div>
-      <div className="absolute bg-cover h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
-     </div>
-      <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-8">
-        <img src={logoWhite} className="w-[300px]" />
-      </div>
-      <div className={`relative flex flex-row justify-center bottom-0 lg:justify-end lg:mr-10 pt-5`}>
-        <img src={phoneIcon} className="w-[24px] h-[24px] invisible sm:visible" />
-        <p className="text-white pr-8 poppins text-sm">0784603428</p>
-        <img src={mailIcon} className="w-[24px] h-[24px]  invisible sm:visible" />
-        <p className="text-white pr-8 poppins text-sm">armonyhair@gmail.com</p>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
-        </a>
-      </div>
-
-      <div className="absolute  inset-x-0 bottom-0 flex-col mb-32">
-        <p className="text-white text-8xl font-serif text-center">Noi suntem Armony</p>
-        <p className="text-white text-1xl font-serif text-center tracking-[.55em]">Hai sa ne cunosti</p>
-      </div>
-    </div>
-    <div className="w-full mt-10 flex flex-col lg:flex-row">
-      <img src={armony2} className="object-none w-[65%] h-[800px]" />
-      <div className="bg-slate-400 w-[65%] h-[500px] lg:-ml-96 lg:mt-96 shadow-lg flex flex-col items-end">
-        <h1 className="pt-20 pr-10 text-5xl font-poppins text-white tracking-wider">Cine suntem noi?</h1>
-        <p className="text-white pt-10 items-start p-16 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!</p>
-      </div>
 
 const TestimonialCard = ({ author, content }) => {
   return (
