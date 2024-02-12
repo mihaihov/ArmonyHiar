@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import {bgService,p1,p2,p3,p4,logoWhite} from "../../assets";
+import {p1,p2,p3,p4,logoWhite} from "../../assets";
 import ".//ServicesPage.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

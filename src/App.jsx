@@ -5,11 +5,13 @@ import About from "../src/components/About/About";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import Contact from "./components/Contact/Contact";
 import React from 'react'
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <div>
       <Router>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Homepage />} />
         </Routes>
