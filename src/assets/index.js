@@ -31,7 +31,7 @@ export {
     armony1,
     armony2,
     armony3,
-    bgService,p1,p2,p3,p4 ,video
+    bgService, p1, p2, p3, p4, video,
     contactPageBackground_lg,
     logoBlack
 }

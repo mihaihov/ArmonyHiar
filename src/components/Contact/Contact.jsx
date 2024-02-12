@@ -43,10 +43,10 @@ const Contact = () => {
         <div className={`flex flex-col justify-center items-center w-full pt-8`}>
           <h1 className="text-[#8fa99e] text-2xl tracking-wide transition-all duration-500 ease-in-out lg:text-5xl lg:tracking-widest">navigare</h1>
           <div className="flex flex-row justify-center gap-8 lg:gap-0">
-            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]">About</h1>
-            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]">Services</h1>
-            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]">Contact</h1>
-            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]">Home</h1>
+            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/about">About</a></h1>
+            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/services">Services</a></h1>
+            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/contact">Contact</a></h1>
+            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/">Homepage</a></h1>
           </div>
         </div>
       </div>
