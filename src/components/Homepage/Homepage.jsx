@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 
-import React ,{ useEffect ,useState,useRef} from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import "./Homepage.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,21 +82,21 @@ const Homepage = () => {
         }
       }
     };
-  
+
     window.addEventListener('keydown', handleKeyDown);
-  
+
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [visibleSection]); 
+  }, [visibleSection]);
 
 
 
   return (
-   
-    <div className="container" ref={containerRef}>  
 
-<div className="vertical-nav">
+    <div className="container" ref={containerRef}>
+
+      <div className="vertical-nav">
         {sectionRefs.current.map((_, index) => (
           <div
             key={index}
@@ -107,105 +107,105 @@ const Homepage = () => {
       </div>
 
 
-    <div id="section1" ref={sectionRefs.current[0]} className="section1"> 
-   <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-    <div>0784603428</div>
-    <div>armonyhair@gmail.com</div>
-    <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
-   </div>
+      <div id="section1" ref={sectionRefs.current[0]} className="section1">
+        <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
+          <div>0784603428</div>
+          <div>armonyhair@gmail.com</div>
+          <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+        </div>
 
-    <div className="section-content">
-      <div className={`centered-text ${visibleSection === 'section1' ? 'fadeIn' : ''}`}>
-  Armony Hair
+        <div className="section-content">
+          <div className={`centered-text ${visibleSection === 'section1' ? 'fadeIn' : ''}`}>
+            Armony Hair
+          </div>
+        </div>
+        <div className={`logo-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
+          <img src="/images/Armony-White.png" alt="logo" />
+        </div>
       </div>
+      <div id="section2" ref={sectionRefs.current[1]} className="section2">
+
+        <div className="sectionTwoContainer">
+
+          <div className={`sectionTwoPhoto ${visibleSection === 'section2' ? 'fadeIn2' : ''}`}>
+            <img src="/images/img2.jpg" alt="photo" />
+          </div>
+          <div className="sectionTwoContent">
+
+            <div className={`mainTitle ${visibleSection === 'section2' ? 'fadeIn3' : ''}`}>i'm <br />vernessa</div>
+            <div className={`subTitle ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>GET TO KNOW ME A LIL BIT</div>
+            <div className={`sectionTwoText ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>At Swank Salon, you will enjoy listening to a variety of music and breathing in diffused essential oils which provide a soothing, relaxing, and tranquil experience. Come get crowned, your throne awaits you!</div>
+            <div className={`btnSection ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>
+              <button>about me</button>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
-      <div className={`logo-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-    <img src="/images/Armony-White.png" alt="logo" />
-  </div>
+      <div id="section3" ref={sectionRefs.current[2]} className="section3">
+        <div className="sectionThreeContainer">
+          <div className="sectionThreeContent">
+
+            <div className={`mainTitle ${visibleSection === 'section3' ? 'fadeIn5' : ''}`}>services</div>
+            <div className={`subTitle ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>COME SEE WHAT I DO</div>
+            <div className={`sectionThreeText ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
+              <div>straighten me</div>
+              <div>define me</div>
+              <div>curl me</div>
+              <div>crown me</div>
+              <div>color me</div>
+              <div>cut me</div>
+              <div>treat me</div>
+              <div>polish me</div>
+
+            </div>
+            <div className={`btnSection ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
+              <button>get details</button>
+            </div>
+
+          </div>
+          <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
+            <img src="/images/img3.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+      <div id="section4" ref={sectionRefs.current[3]} className="section4">
+        <div className="sectionFourContainer">
+
+          <div className={`sectionTwoPhoto ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
+            <img src="/images/img4.jpg" alt="photo" />
+          </div>
+          <div className="sectionFourContent">
+
+            <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact me</div>
+            <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>LET’S TALK BEAUTY</div>
+            <div className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
+              <input placeholder="NAME"></input>
+              <input placeholder="EMAIL"></input>
+              <input placeholder="PHONE NUMBER"></input>
+              <input placeholder="TELL ME ABOUT IT"></input>
+            </div>
+
+            <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
+              <button>send</button>
+            </div>
+
+            <div className={`contact-container4 ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
+              <div>469.396.9848</div>
+              <div>vernessa@swankystylez.com</div>
+              <FontAwesomeIcon icon={faInstagram} size="2x" color="#071a12" opacity={0.6} />
+            </div>
+
+            <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Image Studios | 7951 Collin McKinney Pkwy Suite 1500, Studio 101 | McKinney, TX 75070
+              Appointments Only</div>
+
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="section2" ref={sectionRefs.current[1]} className="section2">
-     
-           <div className="sectionTwoContainer">
-
-                  <div className={`sectionTwoPhoto ${visibleSection === 'section2' ? 'fadeIn2' : ''}`}>
-                    <img src="/images/img2.jpg" alt="photo" />
-                  </div>
-                  <div className="sectionTwoContent"> 
-                  
-                  <div className={`mainTitle ${visibleSection === 'section2' ? 'fadeIn3' : ''}`}>i'm <br/>vernessa</div>
-                  <div className={`subTitle ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>GET TO KNOW ME A LIL BIT</div>
-                  <div className={`sectionTwoText ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>At Swank Salon, you will enjoy listening to a variety of music and breathing in diffused essential oils which provide a soothing, relaxing, and tranquil experience. Come get crowned, your throne awaits you!</div>
-                 <div className={`btnSection ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>
-                  <button>about me</button>
-                 </div>
-                 
-                  </div>
-           </div>
-
-
-    </div>
-    <div id="section3" ref={sectionRefs.current[2]} className="section3">
-   <div className="sectionThreeContainer">
-   <div className="sectionThreeContent"> 
-                  
-                  <div className={`mainTitle ${visibleSection === 'section3' ? 'fadeIn5' : ''}`}>services</div>
-                  <div className={`subTitle ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>COME SEE WHAT I DO</div>
-                  <div className={`sectionThreeText ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
-                    <div>straighten me</div>
-                    <div>define me</div>
-                    <div>curl me</div>
-                    <div>crown me</div>
-                    <div>color me</div>
-                    <div>cut me</div>
-                    <div>treat me</div>
-                    <div>polish me</div>
-
-                  </div>
-                 <div className={`btnSection ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
-                  <button>get details</button>
-                 </div>
-                 
-                  </div>
-   <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
-                    <img src="/images/img3.jpg" alt="photo" />
-                  </div>
-   </div>
-    </div>
-    <div id="section4" ref={sectionRefs.current[3]} className="section4">
-    <div className="sectionFourContainer">
-
-                  <div className={`sectionTwoPhoto ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-                    <img src="/images/img4.jpg" alt="photo" />
-                  </div>
-                  <div className="sectionFourContent"> 
-                  
-                  <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact me</div>
-                  <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>LET’S TALK BEAUTY</div>
-                       <div  className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-                        <input placeholder="NAME"></input>
-                        <input placeholder="EMAIL"></input>
-                        <input placeholder="PHONE NUMBER"></input>
-                        <input placeholder="TELL ME ABOUT IT"></input>
-                       </div>
-                 
-                 <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-                  <button>send</button>
-                 </div>
-
-                 <div className={`contact-container4 ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-    <div>469.396.9848</div>
-    <div>vernessa@swankystylez.com</div>
-    <FontAwesomeIcon icon={faInstagram} size="2x" color="#071a12" opacity={0.6} />
-   </div>
-
-   <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Image Studios | 7951 Collin McKinney Pkwy Suite 1500, Studio 101 | McKinney, TX 75070
-Appointments Only</div>
-                 
-                  </div>
-           </div>
-    </div>
-  </div>
-);
+  );
 }
 
 export default Homepage
