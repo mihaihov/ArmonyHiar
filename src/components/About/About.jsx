@@ -43,16 +43,20 @@ function About() {
         <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
           <img src={logoWhite} className="w-[300px]" />
         </div>
-        <div className={`relative flex flex-row justify-center bottom-0 lg:justify-end lg:mr-10 pt-5`}>
-          <img src={phoneIcon} className="w-[24px] h-[24px] invisible sm:visible" />
-          <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
-          <img src={mailIcon} className="w-[24px] h-[24px]  invisible sm:visible" />
-          <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
-          <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
+        <div className="absolute right-0 top-0 pt-12 pr-4 mr-4 flex flex-col slow-appear lg:flex-row">
+          <div className="flex flex-row pb-2  transition-all duration-500 ease-in-out lg:pb-0 opacity-0 md:opacity-100">
+            <img src={phoneIcon} className="w-[24px] h-[24px]" />
+            <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
+          </div>
+          <div className="flex flex-row transition-all duration-500 ease-in-out pb-2 lg:pb-0 opacity-0 md:opacity-100">
+            <img src={mailIcon} className="w-[24px] h-[24px]" />
+            <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
+          </div>
+          <a href={`${contactInformation.instagramPage} opacity-0 md:opacity-100  transition-all duration-500 ease-in-out`} target="_blank" rel="noopener noreferrer">
+            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" />
           </a>
         </div>
-        <div className="absolute  inset-x-0 bottom-0 flex-col mb-32">
+        <div className="absolute  inset-x-0 bottom-0 flex-col mb-32 slow-appear">
           <p className="text-white text-5xl md:text-6xl lg:text-8xl font-serif text-center">Noi suntem Armony</p>
           <p className="text-white text-1xl font-serif text-center tracking-[.55em]">Hai sa ne cunosti</p>
         </div>
@@ -70,12 +74,12 @@ function About() {
           <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pl-10 lg:text-5xl lg:tracking-wider">Despre Armony</h1>
           <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!</p>
           <div className="w-full flex flex-row justify-center items-start my-3">
-            <button className={`${styles.buttonPrimary} `}>services</button>
-            <button className={`${styles.buttonPrimary}`}>contact</button>
+            <button className={`${styles.buttonPrimary} `}><a href="/services">servicii</a></button>
+            <button className={`${styles.buttonPrimary}`}><a href="/contact">contact</a></button>
           </div>
         </div>
       </div>
-      <h1 className="flex flex-row justify-center text-[#8fa99e] text-3xl lg:text-7xl font-poppins tracking-wide mt-16 mb-8 items-center">testimonials</h1>
+      <h1 className="flex flex-row justify-center text-[#8fa99e] text-3xl lg:text-7xl font-poppins tracking-wide mt-16 mb-8 items-center">testimoniale</h1>
       <div className="relative flex flex-col items-center">
         <div className="relative flex-row pt-11 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center">
           {testimonials

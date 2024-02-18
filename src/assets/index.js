@@ -43,5 +43,5 @@ export {
     instagramPhoto2,
     hairCutSilhouette,
     hairStyleSilhouette,
-    careSilhouette
+    careSilhouette,
 }

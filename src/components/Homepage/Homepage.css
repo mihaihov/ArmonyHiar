@@ -83,13 +83,13 @@
 }
 
 .centered-text {
-  font-size: 7.5vw;
+  /* font-size: 7.5vw;
   text-transform: uppercase;
-  color: white;
+  color: white; */
   font-family: 'Libre Franklin';
-  font-weight: 100;
+  /* font-weight: 100;
   letter-spacing: 1rem;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: luminosity; */
   text-shadow:
     0 0 10px rgba(255, 255, 255, 0.7),
     0 0 20px rgba(255, 255, 255, 0.5),
@@ -477,9 +477,6 @@
 
 
 @media (min-width: 560px) and (max-width: 992px) {
-  .section-content {
-    display: none
-  }
 
   .logo-container {
 
@@ -609,9 +606,6 @@
 
 
 @media (max-width: 559px) {
-  .section-content {
-    display: none
-  }
 
   .logo-container {
 

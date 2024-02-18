@@ -9,6 +9,7 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
+import { instagramColorIcon } from '../../assets';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -114,18 +115,16 @@ const Homepage = () => {
           <div>{contactInformation.phoneNumber}</div>
           <div>{contactInformation.emailAddress}</div>
           <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" />
           </a>
         </div>
 
-        <div className="section-content">
-          <div className={`centered-text ${visibleSection === 'section1' ? 'fadeIn' : ''}`}>
-            Armony Hair
-          </div>
+        {/* <div className="absolute flex-grow flex justify-center items-start pt-5"> */}
+        <div className={`centered-text mt-0 absolute uppercase text-white tracking-widest text-7xl mix-blend-luminosity lg:mt-32 lg:text-9xl`}>
+          Armony
         </div>
-        <div className={`logo-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-          <img src="/images/Armony-White.png" alt="logo" />
-        </div>
+        {/* </div> */}
+        <div className={`logo-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`} />
       </div>
       <div id="section2" ref={sectionRefs.current[1]} className="section2">
 
