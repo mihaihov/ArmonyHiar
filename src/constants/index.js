@@ -74,9 +74,10 @@ export const testimonials = [
 ]
 
 export const contactInformation = {
-    emailAddress: "armonyhair@gmail.com",
-    phoneNumber: "0784603428",
-    instagramPage: "https://www.instagram.com"
+    emailAddress: "armonyfuture@gmail.com",
+    phoneNumber: "0774504849",
+    instagramPage: "https://www.instagram.com/armonyhairstudio",
+    address: "Bulevardul Unirii numarul 63, Sector 5 Bucuresti"
 }
 
 export const howAreWe = {

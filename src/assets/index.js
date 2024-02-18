@@ -17,6 +17,7 @@ import p3 from "./p3.jpg";
 import p4 from "./p4.jpg";
 import video from "./video.mp4"
 import contactPageBackground_lg from './contactPageBackground_lg.jpg'
+import instagramReel1 from './instagramReel1.mp4'
 
 
 export {
@@ -33,5 +34,6 @@ export {
     armony3,
     bgService, p1, p2, p3, p4, video,
     contactPageBackground_lg,
-    logoBlack
+    logoBlack,
+    instagramReel1
 }

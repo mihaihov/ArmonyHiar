@@ -7,6 +7,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { contactInformation } from '../../constants';
+import { instagramReel1 } from '../../assets';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -109,9 +111,11 @@ const Homepage = () => {
 
       <div id="section1" ref={sectionRefs.current[0]} className="section1">
         <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
-          <div>0784603428</div>
-          <div>armonyhair@gmail.com</div>
-          <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+          <div>{contactInformation.phoneNumber}</div>
+          <div>{contactInformation.emailAddress}</div>
+          <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+          </a>
         </div>
 
         <div className="section-content">
@@ -132,11 +136,11 @@ const Homepage = () => {
           </div>
           <div className="sectionTwoContent">
 
-            <div className={`mainTitle ${visibleSection === 'section2' ? 'fadeIn3' : ''}`}>i'm <br />vernessa</div>
-            <div className={`subTitle ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>GET TO KNOW ME A LIL BIT</div>
-            <div className={`sectionTwoText ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>At Swank Salon, you will enjoy listening to a variety of music and breathing in diffused essential oils which provide a soothing, relaxing, and tranquil experience. Come get crowned, your throne awaits you!</div>
+            <div className={`mainTitle ${visibleSection === 'section2' ? 'fadeIn3' : ''}`}>Reinventeaza-ti <br />look-ul cu Armony</div>
+            <div className={`subTitle ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>Fiecare detaliu conteaza</div>
+            <div className={`sectionTwoText ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>Fiecaer vizita este o experienta de precizie si stil. Frizerii nostri combina priceperea si maiestria pentru a oferi croieli personalizate care reflecta personalitatea ta unica.Indiferent dacă cauți o tendință nouă îndrăzneață sau o rafinare clasică, noi suntem convinsi ca iti putem oferi acest lucru. Te asteptam cu mare drag in locatia noastra.</div>
             <div className={`btnSection ${visibleSection === 'section2' ? 'fadeIn4' : ''}`}>
-              <button>about me</button>
+              <button><a href="/about">despre noi</a></button>
             </div>
 
           </div>
@@ -148,26 +152,23 @@ const Homepage = () => {
         <div className="sectionThreeContainer">
           <div className="sectionThreeContent">
 
-            <div className={`mainTitle ${visibleSection === 'section3' ? 'fadeIn5' : ''}`}>services</div>
-            <div className={`subTitle ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>COME SEE WHAT I DO</div>
+            <div className={`mainTitle ${visibleSection === 'section3' ? 'fadeIn5' : ''}`}>servicii</div>
+            <div className={`subTitle ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>CE PUTEM FACE PENTRU TINE</div>
             <div className={`sectionThreeText ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
-              <div>straighten me</div>
-              <div>define me</div>
-              <div>curl me</div>
-              <div>crown me</div>
-              <div>color me</div>
-              <div>cut me</div>
-              <div>treat me</div>
-              <div>polish me</div>
+              <div>tuns</div>
+              <div>styling</div>
+              <div>servicii de ingrijire</div>
 
             </div>
             <div className={`btnSection ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
-              <button>get details</button>
+              <button><a href="/services">mai mult</a></button>
             </div>
 
           </div>
           <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
-            <img src="/images/img3.jpg" alt="photo" />
+            <video autoPlay loop muted>
+              <source src={instagramReel1} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
@@ -179,27 +180,28 @@ const Homepage = () => {
           </div>
           <div className="sectionFourContent">
 
-            <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact me</div>
-            <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>LET’S TALK BEAUTY</div>
+            <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact</div>
+            <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>DESPRE NOUL TAU STIL</div>
             <div className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-              <input placeholder="NAME"></input>
+              <input placeholder="NUME"></input>
               <input placeholder="EMAIL"></input>
-              <input placeholder="PHONE NUMBER"></input>
-              <input placeholder="TELL ME ABOUT IT"></input>
+              <input placeholder="TELEFON"></input>
+              <input placeholder="MESAJ"></input>
             </div>
 
             <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-              <button>send</button>
+              <button>trimite</button>
             </div>
 
             <div className={`contact-container4 ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-              <div>469.396.9848</div>
-              <div>vernessa@swankystylez.com</div>
-              <FontAwesomeIcon icon={faInstagram} size="2x" color="#071a12" opacity={0.6} />
+              <div>{contactInformation.phoneNumber}</div>
+              <div>{contactInformation.emailAddress}</div>
+              <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faInstagram} size="2x" color="#071a12" opacity={0.6} />
+              </a>
             </div>
 
-            <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Image Studios | 7951 Collin McKinney Pkwy Suite 1500, Studio 101 | McKinney, TX 75070
-              Appointments Only</div>
+            <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Armony | {contactInformation.address} | Doar cu Rezervare</div>
 
           </div>
         </div>
