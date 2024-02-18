@@ -18,6 +18,10 @@ import p4 from "./p4.jpg";
 import video from "./video.mp4"
 import contactPageBackground_lg from './contactPageBackground_lg.jpg'
 import instagramReel1 from './instagramReel1.mp4'
+import instagramPhoto2 from './instagramPhoto2.jpg'
+import hairCutSilhouette from './hairCutSilhouette.svg'
+import hairStyleSilhouette from './hairStyleSilhouette.svg'
+import careSilhouette from './careSilhouette.svg'
 
 
 export {
@@ -35,5 +39,9 @@ export {
     bgService, p1, p2, p3, p4, video,
     contactPageBackground_lg,
     logoBlack,
-    instagramReel1
+    instagramReel1,
+    instagramPhoto2,
+    hairCutSilhouette,
+    hairStyleSilhouette,
+    careSilhouette
 }

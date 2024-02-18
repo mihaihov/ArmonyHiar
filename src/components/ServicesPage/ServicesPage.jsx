@@ -4,13 +4,17 @@ import { p1, p2, p3, p4, logoWhite } from "../../assets";
 import ".//ServicesPage.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { contactInformation } from '../../constants';
+import { hairCutSilhouette } from '../../assets';
+import { hairStyleSilhouette } from '../../assets';
+import { careSilhouette } from '../../assets';
 
 const ServicesPage = () => {
   return (
     <div className="servicesContainer">
       <div className="servicesWrapper">
 
-        <div className="servicesFirstSection">
+        <div className="servicesFirstSection object-none bg-cover brightness-75">
 
           <div className='firstSectionWrapper'>
 
@@ -19,56 +23,44 @@ const ServicesPage = () => {
             </div>
 
             <div className='contact-containerService'>
-              <div>0784603428</div>
-              <div>armonyhair@gmail.com</div>
-              <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+              <div>{contactInformation.phoneNumber}</div>
+              <div>{contactInformation.emailAddress}</div>
+              <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} size="2x" color="white" opacity={0.6} />
+              </a>
             </div>
           </div>
 
           <div className="texts">
-            <div className="mainText"> services</div>
-            <div className="subText">come see what i do</div>
+            <div className="text-white text-7xl md:text-6xl lg:text-9xl font-serif text-center tracking-wider"> services</div>
+            <div className="text-white text-1xl font-serif text-center tracking-[.35em] pt-4">ce putem face pentru tine</div>
           </div>
 
         </div>
 
 
-        <div className="servicesSecondSection">
-
-          <div className="servicesPhotos">
-            <div className="photos">
-              <img src={p1} alt="" />
-              <div className="photoText">define me<br />
-                curl me</div>
-            </div>
-            <div className="photos">
-              <img src={p2} alt="" />
-              <div className="photoText">curl me <br />
-                cut me</div>
-            </div>
-
-            <div className="photos">
-              <img src={p3} alt="" />
-              <div className="photoText">crown me <br />
-                polish me</div>
-            </div>
-
-            <div className="photos">
-              <img src={p4} alt="" />
-              <div className="photoText">color me <br />
-                straighten me</div>
-            </div>
+        <div className="flex flex-col px-4 lg:px-0 pt-8 md:flex-row justify-center gap-8 lg:gap-20">
+          <div className="bg-red-100 w-full lg:w-[500px] h-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in-out duration-500 delay-0">
+            <img src={hairCutSilhouette} className='w-[80%] h-[80%] rounded-md z-0' />
+            <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>TUNS</h1>
+          </div>
+          <div className="bg-red-100 w-full lg:w-[500px] h-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-transform ease-in-out duration-500 delay-0">
+            <img src={hairStyleSilhouette} className='w-[80%] h-[80%] rounded-md' />
+            <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>STYLING</h1>
+          </div>
+          <div className="bg-red-100 w-full lg:w-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-transform ease-in-out duration-500 delay-0">
+            <img src={careSilhouette} className='w-[80%] h-[80%] rounded-md' />
+            <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>SERVICII DE INGRIJIRE</h1>
           </div>
         </div>
 
         <div className="servicesThirdSection">
 
           <div className="thirdSTitle">
-            Each appointment is one-on-one, I take my time getting to know you and your hair goals. Prior to scheduling your appointment, we will consult over the right color, style, or cut for your crown via Zoom. After your appointment, I will suggest an at-home care package and book your next visit.
-
+            Tratam fiecare client cu seriozitate si responsabilitate deplina. Stim cat de important este timpul tau, cu toate acestea, ne cerem scuze daca programarile nu sunt respectate intotdeauna la minut. Ne luam angajamentul, ca si in situatiile neprevazute, sa nu existe o intarziere mai mare de maxim 10 minute din partea noastra.
           </div>
 
-          <div className="servicesSectionTexts">
+          {/* <div className="servicesSectionTexts">
 
             <div className="thirdContent">
               <div className="conTitle">define me ----------------------------------</div>
@@ -84,37 +76,7 @@ const ServicesPage = () => {
               <div className="conTitle">define me --------------------------------</div>
               <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
             </div>
-
-
-            <div className="thirdContent">
-              <div className="conTitle">define me --------------------------------</div>
-              <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
-            </div>
-
-
-            <div className="thirdContent">
-              <div className="conTitle">define me --------------------------------</div>
-              <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
-            </div>
-
-
-            <div className="thirdContent">
-              <div className="conTitle">define me --------------------------------</div>
-              <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
-            </div>
-
-
-            <div className="thirdContent">
-              <div className="conTitle">define me --------------------------------</div>
-              <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
-            </div>
-
-            <div className="thirdContent">
-              <div className="conTitle">define me --------------------------------</div>
-              <div className="conContent">Want your natural curls to stand out? This method includes shingling, coiling, flat twists, individual twists, or bantu knot out to enhance your beautiful texture.</div>
-            </div>
-
-          </div>
+          </div> */}
         </div>
 
         <div className={`flex flex-col justify-center items-center w-full`}>

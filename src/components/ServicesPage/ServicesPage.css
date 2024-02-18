@@ -17,10 +17,7 @@
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.3)), url('../../assets/bgService.jpg');
-  background-size: contain;
-  background-attachment: fixed;
-  background-size: 100% 110%;
+      rgba(0, 0, 0, 0.3)), url('../../assets/instagramPhoto2.jpg');
 }
 
 
@@ -116,7 +113,7 @@
 .servicesPhotos {
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
 
