@@ -35,18 +35,18 @@ const Contact = () => {
         <div className="flex flex-row pt-20 w-full justify-center items-center">
           <h1 className="text-[#8fa99e] font-poppins text-center">Armony Studio Bulevardul Unirii 51 Sector 3 Bucuresti</h1>
         </div>
-        <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">0784603428</h1>
-        <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">armonyhair1@gmail.com</h1>
+        <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">{contactInformation.phoneNumber}</h1>
+        <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">{contactInformation.emailAddress}</h1>
         <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer" className="pt-8">
           <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
         </a>
         <div className={`flex flex-col justify-center items-center w-full pt-8`}>
           <h1 className="text-[#8fa99e] text-2xl tracking-wide transition-all duration-500 ease-in-out lg:text-5xl lg:tracking-widest">navigare</h1>
           <div className="flex flex-row justify-center gap-8 lg:gap-0">
+            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/">Home</a></h1>
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/about">About</a></h1>
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/services">Services</a></h1>
             <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/contact">Contact</a></h1>
-            <h1 className="text-base mt-8 lg:text-3xl lg:ml-16 transition-all duration-500 ease-in-out hover:text-[#8fa99e] cursor-pointer text-[#8fa99e]"><a href="/">Homepage</a></h1>
           </div>
         </div>
       </div>
