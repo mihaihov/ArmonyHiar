@@ -52,7 +52,7 @@ function About() {
             <img src={mailIcon} className="w-[24px] h-[24px]" />
             <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
           </div>
-          <a href={`${contactInformation.instagramPage} opacity-0 md:opacity-100  transition-all duration-500 ease-in-out`} target="_blank" rel="noopener noreferrer">
+          <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
             <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" />
           </a>
         </div>
