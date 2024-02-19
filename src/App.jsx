@@ -6,17 +6,18 @@ import ServicesPage from "./components/ServicesPage/ServicesPage";
 import Contact from "./components/Contact/Contact";
 import React from 'react'
 import Navbar from "./components/Navbar/Navbar";
+import GalleryPage from "./components/GalleryPage/GalleryPage";
 
 const App = () => {
   return (
     <div>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<GalleryPage />} />
+          {/* <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services" element={<ServicesPage />} /> */}
         </Routes>
       </Router>
     </div>
