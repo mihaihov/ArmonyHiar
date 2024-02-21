@@ -110,7 +110,7 @@ const Homepage = () => {
       </div>
 
 
-      <div id="section1" ref={sectionRefs.current[0]} className="section1">
+      <div id="section1" ref={sectionRefs.current[0]} className="section1 w-screen h-screen">
         <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
           <div>{contactInformation.phoneNumber}</div>
           <div>{contactInformation.emailAddress}</div>
@@ -120,7 +120,7 @@ const Homepage = () => {
         </div>
 
         {/* <div className="absolute flex-grow flex justify-center items-start pt-5"> */}
-        <div className={`centered-text mt-0 absolute uppercase text-white tracking-widest text-7xl mix-blend-luminosity lg:mt-32 lg:text-9xl`}>
+        <div className={`centered-text mt-0 absolute uppercase text-white tracking-widest text-7xl mix-blend-luminosity mt-32 lg:text-9xl`}>
           Armony
         </div>
         {/* </div> */}
@@ -192,11 +192,15 @@ const Homepage = () => {
               <button>trimite</button>
             </div>
 
-            <div className={`contact-container4 ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-              <div>{contactInformation.phoneNumber}</div>
-              <div>{contactInformation.emailAddress}</div>
-              <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer" >
-                <FontAwesomeIcon icon={faInstagram} size="2x" color="#071a12" opacity={0.6} />
+            <div className="absolute right-0 top-0 pt-12 pr-4 mr-4 flex flex-col lg:flex-row">
+              <div className="flex flex-row pb-2  transition-all duration-500 ease-in-out lg:pb-0 opacity-0 md:opacity-100">
+                <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
+              </div>
+              <div className="flex flex-row transition-all duration-500 ease-in-out pb-2 lg:pb-0 opacity-0 md:opacity-100">
+                <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
+              </div>
+              <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
+                <img src={instagramColorIcon} className="w-[30px] h-[30px]" />
               </a>
             </div>
 
