@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox';
 import { slides } from '../../assets/gallerySource';
 import 'yet-another-react-lightbox/styles.css';
-import ImageComponent from '../ImageComponent/ImageComponent';
 import { logoBlack } from '../../assets';
 
 const GalleryPage = () => {
