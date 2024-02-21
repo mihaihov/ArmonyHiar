@@ -9,7 +9,7 @@ const ImageComponent = (props) => {
         onClick(index);
     }
     return (
-        <div className=' max-w-[1200px] mx-8 grid grid-cols-4 lg:grid-cols-4 gap-4'>
+        <div className=' max-w-[1200px] mx-8 grid grid-cols-3'>
             {data.map((slide, index) => (
                 <div onClick={() => handleClickImage(index)} key={index} className='w-full h-80 cursor-pointer'>
                     <img src={slide.src} alt={slide.description} className='w-full h-full object-cover rounded-md' />
