@@ -3,6 +3,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import { slides } from '../../assets/gallerySource';
 import 'yet-another-react-lightbox/styles.css';
 import { logoBlack } from '../../assets';
+import { logoWhite } from '../../assets';
 
 const GalleryPage = () => {
 
@@ -16,9 +17,9 @@ const GalleryPage = () => {
 
     const [index, setIndex] = useState(-1)
     return (
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center bg-black'>
             <div className='w-full flex flex-col items-center mt-8 mb-20'>
-                <img src={logoBlack} className='w-[200px] md:w-[300px]' />
+                <img src={logoWhite} className='w-[200px] md:w-[300px]' />
                 <div className="text-xl mt-8 font-poppins tracking-widest text-zinc-500">Galerie</div>
             </div>
 
