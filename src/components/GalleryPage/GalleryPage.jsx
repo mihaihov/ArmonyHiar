@@ -3,7 +3,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import { slides } from '../../assets/gallerySource';
 import 'yet-another-react-lightbox/styles.css';
 import { logoBlack } from '../../assets';
-import { logoWhite } from '../../assets';
+import FooterNavbar from '../FooterNavbar/FooterNavbar';
 
 const GalleryPage = () => {
 
@@ -36,6 +36,10 @@ const GalleryPage = () => {
                 </div>
 
                 <Lightbox slides={slides} index={index} open={index >= 0} close={() => setIndex(-1)} />
+            </div>
+            <div className="mt-16">
+                <FooterNavbar />
+
             </div>
         </div>
     )
