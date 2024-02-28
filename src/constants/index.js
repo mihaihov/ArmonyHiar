@@ -1,3 +1,5 @@
+import { careSilhouette } from "../assets"
+
 export const testimonials = [
     {
         id: "testimonial-1",
@@ -89,3 +91,36 @@ export const aboutArmony = {
     title: "Despre Armony",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!"
 }
+
+export const teamMembers = [
+    {
+        id: "1",
+        name: "Madalin",
+        description: "Cele mai bune tunsori!",
+        src: { careSilhouette }
+    },
+    {
+        id: "2",
+        name: "Andrei",
+        description: "Cele mai bune tunsori",
+        src: { careSilhouette }
+    },
+    {
+        id: "3",
+        name: "Alin",
+        description: "Cele mai bune tunsori",
+        src: { careSilhouette }
+    },
+    {
+        id: "4",
+        name: "Mihai",
+        description: "Cele mai bune tunsori",
+        src: { careSilhouette }
+    },
+    {
+        id: "5",
+        name: "Ion",
+        description: "Cele mai bune tunsori",
+        src: { careSilhouette }
+    },
+]
