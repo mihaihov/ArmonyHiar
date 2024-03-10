@@ -3,8 +3,6 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import "./Homepage.css";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';

@@ -4,7 +4,7 @@ import Homepage from "../src/components/Homepage/Homepage";
 import About from "../src/components/About/About";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
 import Contact from "./components/Contact/Contact";
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "./components/Navbar/Navbar";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import TeamPage from "./components/TeamPage/TeamPage";
