@@ -29,26 +29,20 @@ export const testimonials = [
     {
         id: "testimonial-1",
         alwaysVisible: "false",
-        author: "Iulian Dragulescu",
+        author: "Andrei",
         content: "Tunsori de calitate, atentia la detalii conteaza."
     },
     {
         id: "testimonial-1",
         alwaysVisible: "false",
-        author: "Mihai",
+        author: "Ionut",
         content: "Experiență excelentă. Personal profesionist și rezultate excelente!"
     },
     {
         id: "testimonial-1",
         alwaysVisible: "false",
-        author: "Madalin",
+        author: "Alex",
         content: "Servicii impecabile! Profesionalism și rezultate foarte bune de fiecare data."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Mihai Raducu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
     },
     {
         id: "testimonial-1",

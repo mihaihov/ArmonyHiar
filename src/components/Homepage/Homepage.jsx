@@ -10,6 +10,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
 import { instagramColorIcon } from '../../assets';
+import { doneIcon } from '../../assets';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -18,6 +19,7 @@ const Homepage = () => {
   const containerRef = useRef(null);
   const sectionRefs = useRef([useRef(null), useRef(null), useRef(null), useRef(null)]);
   const [visibleSection, setVisibleSection] = useState(null);
+  const [sent, setsend] = useState(false)
 
 
   useEffect(() => {
@@ -190,7 +192,10 @@ const Homepage = () => {
             </div>
 
             <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-              <button>trimite</button>
+              <button className={`${sent ? 'hidden' : 'visible'}`} onClick={() => {
+                setsend(!sent)
+              }}>trimite</button>
+              <img src={doneIcon} className={`${sent ? 'visible' : 'hidden'} w-[100px] transition-opacity duration-500 ease-in opacity-100`} />
             </div>
 
             <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Armony | {contactInformation.address} | Doar cu Rezervare</div>

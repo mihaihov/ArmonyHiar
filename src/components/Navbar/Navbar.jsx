@@ -20,7 +20,7 @@ const Navbar = () => {
             <source src={video} type="video/mp4" />
           </video>
           <video autoPlay loop muted className="navbar-image">
-            <source src={video} type="video/mp4" />
+            <source src={navBarMobile_bg} type="video/mp4" />
           </video>
           {/* <img src={armony3} alt="Background" className="navbar-image" /> */}
         </div>
