@@ -17,6 +17,8 @@ import { useState } from "react";
 import { testimonials } from "../../constants";
 import { contactInformation } from "../../constants";
 import FooterNavbar from "../FooterNavbar/FooterNavbar";
+import { howAreWe } from "../../constants";
+import { aboutArmony } from "../../constants";
 
 
 const TestimonialCard = ({ author, content }) => {
@@ -65,15 +67,15 @@ function About() {
       <div className="w-full mt-10 flex flex-col lg:flex-row">
         <img src={armony2} className="mx-3 object-cover h-[600px] lg:mx-0 lg:object-none lg:w-[65%] lg:h-[800px]" />
         <div className="bg-slate-400 ml-20 -mt-36 shadow-lg flex flex-col items-center lg:w-[65%] lg:h-[500px] lg:-ml-96 lg:mt-96 lg:items-end">
-          <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pr-10 lg:text-5xl lg:tracking-wider">Cine suntem noi?</h1>
-          <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!</p>
+          <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pr-10 lg:text-5xl lg:tracking-wider">{howAreWe.title}</h1>
+          <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{howAreWe.contentOne}<br /><br />{howAreWe.contentTwo}</p>
         </div>
       </div>
       <div className="w-full flex flex-col lg:flex-row-reverse">
         <img src={armony3} className="ml-3 object-cover h-[600px] mt-5 lg:-mt-10 lg:mr-10 lg:mx-0 lg:object-none lg:w-[50%] lg:h-[650px] z-0" />
         <div className="bg-slate-400 shadow-lg ml-8 -mt-48 flex flex-col items-center lg:w-[50%] lg:mt-72 lg:items-start lg:-mr-36 z-10">
-          <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pl-10 lg:text-5xl lg:tracking-wider">Despre Armony</h1>
-          <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!</p>
+          <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pl-10 lg:text-5xl lg:tracking-wider">{aboutArmony.title}</h1>
+          <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{aboutArmony.contentOne}  <br /> <br /> {aboutArmony.contentTwo}</p>
           <div className="w-full flex flex-row justify-center items-start my-3">
             <button className={`${styles.buttonPrimary} `}><a href="/services">servicii</a></button>
             <button className={`${styles.buttonPrimary}`}><a href="/contact">contact</a></button>

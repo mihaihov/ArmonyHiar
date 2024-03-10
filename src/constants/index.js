@@ -5,32 +5,44 @@ export const testimonials = [
     {
         id: "testimonial-1",
         alwaysVisible: "true",
-        author: "Mihai Raducu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
+        author: "Mihai",
+        content: "Profesionalism, calitate, atentie la cerintele clientului. Unul dintre putinele saloane din Bucuresti unde gasesti cu adevarat asa ceva"
     },
     {
         id: "testimonial-1",
         alwaysVisible: "true",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
+        author: "Iuli",
+        content: "Cele mai bune servicii."
     },
     {
         id: "testimonial-1",
         alwaysVisible: "true",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
+        author: "Alin",
+        content: "Cele mai bune servicii , atmosfera de exceptie, personalul super minunat."
     },
     {
         id: "testimonial-1",
         alwaysVisible: "true",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
+        author: "Marius",
+        content: "Intordeauna serviciile au fost calitative."
     },
     {
         id: "testimonial-1",
         alwaysVisible: "false",
         author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
+        content: "Tunsori de calitate, atentia la detalii conteaza."
+    },
+    {
+        id: "testimonial-1",
+        alwaysVisible: "false",
+        author: "Mihai",
+        content: "Experiență excelentă. Personal profesionist și rezultate excelente!"
+    },
+    {
+        id: "testimonial-1",
+        alwaysVisible: "false",
+        author: "Madalin",
+        content: "Servicii impecabile! Profesionalism și rezultate foarte bune de fiecare data."
     },
     {
         id: "testimonial-1",
@@ -41,39 +53,9 @@ export const testimonials = [
     {
         id: "testimonial-1",
         alwaysVisible: "false",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Mihai Raducu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Mihai Raducu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Iulian Dragulescu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
-    {
-        id: "testimonial-1",
-        alwaysVisible: "false",
-        author: "Mihai Raducu",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perspiciatis officia laudantium dignissimos temporibus est dicta, aliquid qui et, voluptatem error voluptatibus vero incidunt quidem similique facilis! Nostrum, natus nihil."
-    },
+        author: "Robert",
+        content: "Personalul este foarte prietenos. Foarte multumit!"
+    }
 ]
 
 export const contactInformation = {
@@ -85,46 +67,40 @@ export const contactInformation = {
 
 export const howAreWe = {
     title: "Cine suntem noi?",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!"
+    contentOne: "La Armony, suntem mândri să oferim o experiență de tuns și îngrijire a părului de neegalat. Cu o echipă de stilisti talentați și pasionați, ne străduim să creăm tunsori care să te facă să strălucești. Ne place să ne concentrăm pe fiecare detaliu, inca din primul moment până la momentul finalizării, pentru a ne asigura că pleci cu un zâmbet pe buze și încredere în aspectul tău.",
+    contentTwo: "La Armony, îți creăm o experiență de răsfăț și înfrumusețare. Cu un mediu relaxant și un serviciu personalizat, te invităm să te bucuri de o pauză de relaxare și să descoperi frumusețea la Armony. Vino să te bucuri de cele mai noi tendințe în tuns și îngrijirea părului și să simți diferența la Armony. Te așteptăm cu brațele deschise!"
 }
 
 export const aboutArmony = {
     title: "Despre Armony",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis itaque doloribus aperiam quidem vero nam! Iste illo repellendus veritatis deserunt fuga fugiat! Possimus, maxime ad. Nam neque fugiat voluptas?  <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod alias autem, itaque ipsa veniam quos! Sapiente, numquam eius perspiciatis harum necessitatibus blanditiis in quasi, laborum nesciunt minus ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae at molestias officiis, error eius laboriosam quo architecto dignissimos voluptatem doloribus officia ipsa in illo amet? Repellendus laborum nulla cumque!"
+    contentOne: "Suntem o echipă pasionată și dedicată, cu o misiune clară: să oferim servicii de cea mai înaltă calitate și să creăm experiențe memorabile pentru clienții noștri. Ne concentrăm pe nevoile și dorințele fiecărui client și ne străduim să le îndeplinim cu profesionalism și atenție la detalii. Cu o combinație de talent, creativitate și experiență, suntem aici să vă ajutăm să vă simțiți și să arătați la fel de bine pe cât vă doriți.",
+    contentTwo: "La Armony, suntem mai mult decât un simplu barbershop - suntem o comunitate care se angajează să vă ajute să vă exprimați și să vă îngrijiți de aspectul personal în cel mai autentic și plăcut mod posibil."
 }
 
 export const teamMembers = [
     {
         id: "1",
         name: "Madalin",
-        instagramProfile: '',
-        twitterProfile: '',
-        facebookProfile: '',
-        src: tomaMadalin
+        src: tomaMadalin,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=655eee6c4e80f541413c20c5&absp=company_details_deeplink&campaignId=&campaignSource="
     },
     {
         id: "2",
         name: "Alexandru",
-        instagramProfile: '',
-        twitterProfile: '',
-        facebookProfile: '',
-        src: posmagiuAlexandru
+        src: posmagiuAlexandru,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=6559b19d29d8f976ba7fda85&absp=company_details_deeplink&campaignId=&campaignSource="
     },
     {
         id: "3",
         name: "Beniamin",
-        instagramProfile: '',
-        twitterProfile: '',
-        facebookProfile: '',
-        src: vaduvaBeniamin
+        src: vaduvaBeniamin,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=655eedf74e80f5154d3c1c1e&absp=company_details_deeplink&campaignId=&campaignSource="
     },
     {
         id: "4",
         name: "George",
-        instagramProfile: '',
-        twitterProfile: '',
-        facebookProfile: '',
-        src: georgeManofu
+        src: georgeManofu,
+        link: "https://mero.ro/p/armony?absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 

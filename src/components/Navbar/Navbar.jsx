@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import "./Navbar.css";
 import { video, armony3 } from "../../assets";
 import { NavbarItems } from '../../constants';
+import { navBarMobile_bg } from '../../assets';
 
 const Navbar = () => {
 
@@ -18,11 +19,14 @@ const Navbar = () => {
           <video autoPlay loop muted className="navbar-video">
             <source src={video} type="video/mp4" />
           </video>
-          <img src={armony3} alt="Background" className="navbar-image" />
+          <video autoPlay loop muted className="navbar-image">
+            <source src={video} type="video/mp4" />
+          </video>
+          {/* <img src={armony3} alt="Background" className="navbar-image" /> */}
         </div>
         <nav className="navbar-content">
           {NavbarItems.map((item, index) => (
-            <a href={item.link} onClick={toggleNavbar}>{item.label}</a>
+            <a key={item.id} href={item.link} onClick={toggleNavbar}>{item.label}</a>
           ))}
         </nav>
       </div>

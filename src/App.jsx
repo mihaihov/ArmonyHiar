@@ -8,10 +8,12 @@ import React from 'react'
 import Navbar from "./components/Navbar/Navbar";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import TeamPage from "./components/TeamPage/TeamPage";
+import FloatingButton from "./components/FloatingButton/FloatingButton";
 
 const App = () => {
   return (
     <div>
+      <FloatingButton />
       <Router>
         <Navbar />
         <Routes>

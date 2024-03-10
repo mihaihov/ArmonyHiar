@@ -98,7 +98,6 @@ const Homepage = () => {
   return (
 
     <div className="container" ref={containerRef}>
-
       <div className="vertical-nav">
         {sectionRefs.current.map((_, index) => (
           <div
@@ -111,16 +110,16 @@ const Homepage = () => {
 
 
       <div id="section1" ref={sectionRefs.current[0]} className="section1 w-screen h-screen">
-        <div className={`contact-container ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
+        <div className={`contact-container pb-16 md:pb-0 ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
           <div>{contactInformation.phoneNumber}</div>
           <div>{contactInformation.emailAddress}</div>
           <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" />
+            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  md:opacity-100  transition-all duration-500 ease-in-out" />
           </a>
         </div>
 
         {/* <div className="absolute flex-grow flex justify-center items-start pt-5"> */}
-        <div className={`centered-text mt-0 absolute uppercase text-white tracking-widest text-7xl mix-blend-luminosity mt-32 lg:text-9xl`}>
+        <div className={`centered-text mt-0 absolute uppercase text-white tracking-widest text-7xl mix-blend-luminosity lg:mt-32 lg:text-9xl`}>
           Armony
         </div>
         {/* </div> */}
@@ -153,10 +152,12 @@ const Homepage = () => {
 
             <div className={`mainTitle ${visibleSection === 'section3' ? 'fadeIn5' : ''}`}>servicii</div>
             <div className={`subTitle ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>CE PUTEM FACE PENTRU TINE</div>
-            <div className={`sectionThreeText ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
-              <div>tuns</div>
-              <div>styling</div>
-              <div>servicii de ingrijire</div>
+            <div className={` mt-12 ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
+              <div className='text-2xl text-center border-x-2 mb-8 border-r-2 shadow-xl px-24 py-4'>styling</div>
+              <div className='text-2xl text-center border-x-2 mb-8 border-r-2 shadow-xl px-24 py-4'>tuns</div>
+              <div className='text-2xl text-center border-x-2 mb-8 border-r-2 shadow-xl px-24 py-4'>servicii de ingrijire</div>
+              {/* <div>styling</div>
+              <div>servicii de ingrijire</div> */}
 
             </div>
             <div className={`btnSection ${visibleSection === 'section3' ? 'fadeIn4' : ''}`}>
@@ -190,18 +191,6 @@ const Homepage = () => {
 
             <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
               <button>trimite</button>
-            </div>
-
-            <div className="absolute right-0 top-0 pt-12 pr-4 mr-4 flex flex-col lg:flex-row">
-              <div className="flex flex-row pb-2  transition-all duration-500 ease-in-out lg:pb-0 opacity-0 md:opacity-100">
-                <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
-              </div>
-              <div className="flex flex-row transition-all duration-500 ease-in-out pb-2 lg:pb-0 opacity-0 md:opacity-100">
-                <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
-              </div>
-              <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-                <img src={instagramColorIcon} className="w-[30px] h-[30px]" />
-              </a>
             </div>
 
             <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Armony | {contactInformation.address} | Doar cu Rezervare</div>
