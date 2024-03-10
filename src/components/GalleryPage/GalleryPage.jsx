@@ -38,7 +38,7 @@ const GalleryPage = () => {
 
                 <Lightbox slides={slides} index={index} open={index >= 0} close={() => setIndex(-1)} />
             </div>
-            <div className='mt-16'>
+            <div className='mt-20'>
                 <FooterNavbar />
             </div>
         </div>

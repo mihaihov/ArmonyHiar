@@ -104,10 +104,6 @@ function About() {
           <FooterNavbar />
         </div>
       </div>
-      <div className="flex flex-row justify-center mt-0 gap-8">
-        <h1 className="text-xs mt-8 lg:ml-16 hover:text-[#8fa99e] cursor-pointer lg:text-sm">privacy policy</h1>
-        <h1 className="text-xs mt-8 lg:ml-16 hover:text-[#8fa99e] cursor-pointer lg:text-sm ">designed by Mihai</h1>
-      </div>
     </div>
   )
 };

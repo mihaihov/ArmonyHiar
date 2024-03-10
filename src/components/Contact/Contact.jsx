@@ -41,7 +41,9 @@ const Contact = () => {
         <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer" className="pt-8">
           <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6" />
         </a>
-        <FooterNavbar />
+        <div className="mt-20">
+          <FooterNavbar />
+        </div>
       </div>
     </div>
   )

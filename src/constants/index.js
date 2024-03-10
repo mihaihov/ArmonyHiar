@@ -127,3 +127,36 @@ export const teamMembers = [
         src: georgeManofu
     }
 ]
+
+export const NavbarItems = [
+    {
+        id: 1,
+        label: "Acasa",
+        link: "/"
+    },
+    {
+        id: 2,
+        label: "Servicii",
+        link: "/services"
+    },
+    {
+        id: 3,
+        label: "Echipa",
+        link: "/team"
+    },
+    {
+        id: 4,
+        label: "Galerie",
+        link: "/gallery"
+    },
+    {
+        id: 5,
+        label: "Despre noi",
+        link: "/about"
+    },
+    {
+        id: 6,
+        label: "Contact",
+        link: "/contact"
+    },
+]
