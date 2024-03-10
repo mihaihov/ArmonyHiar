@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css";
 import { video, armony3 } from "../../assets";
+import { NavbarItems } from '../../constants';
 
 const Navbar = () => {
 
@@ -20,12 +21,9 @@ const Navbar = () => {
           <img src={armony3} alt="Background" className="navbar-image" />
         </div>
         <nav className="navbar-content">
-          <a href="/" onClick={toggleNavbar}>Home</a>
-          <a href="/services" onClick={toggleNavbar}>Services</a>
-          <a href="/about" onClick={toggleNavbar}>About</a>
-          <a href="/contact" onClick={toggleNavbar}>Contact</a>
-          <a href="/gallery" onClick={toggleNavbar}>Gallery</a>
-          <a href="/team" onClick={toggleNavbar}>Echipa</a>
+          {NavbarItems.map((item, index) => (
+            <a href={item.link} onClick={toggleNavbar}>{item.label}</a>
+          ))}
         </nav>
       </div>
     </div>
