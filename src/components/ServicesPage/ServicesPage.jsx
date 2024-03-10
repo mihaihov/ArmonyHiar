@@ -13,16 +13,6 @@ import { instagramPhoto2 } from '../../assets';
 import { phoneIcon } from '../../assets';
 import { mailIcon } from '../../assets';
 import FooterNavbar from "../FooterNavbar/FooterNavbar";
-import { teamMembers } from '../../constants';
-
-const TeamMember = (teamMember) => {
-  return (
-    <div className='bg-red-100 w-full lg:w-[700px] h-[700px] shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in-out duration-500 delay-0 mb-8 flex flex-col items-center justify-center rounded-md'>
-      <img src={teamMember.src} className='w-[80%] h-[80%] rounded-md z-0' />
-      <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>{teamMember.name}</h1>
-    </div>
-  )
-}
 
 const ServicesPage = () => {
   return (
@@ -65,17 +55,6 @@ const ServicesPage = () => {
           <img src={careSilhouette} className='w-[80%] h-[80%] rounded-md' />
           <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>SERVICII DE INGRIJIRE</h1>
         </div>
-      </div>
-
-      <div className="flex flex-col mt-12 justify-center items-center">
-        {teamMembers.map((teamMember, index) => (
-          <TeamMember key={teamMember.id} teamMember={teamMember} />
-        ))}
-      </div>
-
-
-      <div className="flex flex-col mt-12">
-
       </div>
 
       <div className="servicesThirdSection">

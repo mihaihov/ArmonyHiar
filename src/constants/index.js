@@ -1,4 +1,5 @@
 import { careSilhouette } from "../assets"
+import { tomaMadalin, posmagiuAlexandru, georgeManofu, vaduvaBeniamin } from "../assets"
 
 export const testimonials = [
     {
@@ -96,31 +97,33 @@ export const teamMembers = [
     {
         id: "1",
         name: "Madalin",
-        description: "Cele mai bune tunsori!",
-        src: { careSilhouette }
+        instagramProfile: '',
+        twitterProfile: '',
+        facebookProfile: '',
+        src: tomaMadalin
     },
     {
         id: "2",
-        name: "Andrei",
-        description: "Cele mai bune tunsori",
-        src: { careSilhouette }
+        name: "Alexandru",
+        instagramProfile: '',
+        twitterProfile: '',
+        facebookProfile: '',
+        src: posmagiuAlexandru
     },
     {
         id: "3",
-        name: "Alin",
-        description: "Cele mai bune tunsori",
-        src: { careSilhouette }
+        name: "Beniamin",
+        instagramProfile: '',
+        twitterProfile: '',
+        facebookProfile: '',
+        src: vaduvaBeniamin
     },
     {
         id: "4",
-        name: "Mihai",
-        description: "Cele mai bune tunsori",
-        src: { careSilhouette }
-    },
-    {
-        id: "5",
-        name: "Ion",
-        description: "Cele mai bune tunsori",
-        src: { careSilhouette }
-    },
+        name: "George",
+        instagramProfile: '',
+        twitterProfile: '',
+        facebookProfile: '',
+        src: georgeManofu
+    }
 ]

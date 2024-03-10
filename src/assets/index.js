@@ -22,7 +22,10 @@ import instagramPhoto2 from './instagramPhoto2.jpg'
 import hairCutSilhouette from './hairCutSilhouette.svg'
 import hairStyleSilhouette from './hairStyleSilhouette.svg'
 import careSilhouette from './careSilhouette.svg'
-
+import tomaMadalin from './TomaMadalin.jpeg'
+import posmagiuAlexandru from './PosmagiuAlexandru.jpeg'
+import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
+import georgeManofu from './GeorgeManofu.jpeg'
 
 export {
     contactBackground,
@@ -44,4 +47,8 @@ export {
     hairCutSilhouette,
     hairStyleSilhouette,
     careSilhouette,
+    tomaMadalin,
+    vaduvaBeniamin,
+    posmagiuAlexandru,
+    georgeManofu
 }
