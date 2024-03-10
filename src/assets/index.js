@@ -28,6 +28,7 @@ import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
 import georgeManofu from './GeorgeManofu.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
 import doneIcon from './doneIcon.svg'
+import samir from './samir.jpeg'
 
 export {
     contactBackground,
@@ -54,5 +55,6 @@ export {
     posmagiuAlexandru,
     georgeManofu,
     navBarMobile_bg,
-    doneIcon
+    doneIcon,
+    samir
 }

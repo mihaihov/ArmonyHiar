@@ -1,51 +1,51 @@
 import { careSilhouette } from "../assets"
-import { tomaMadalin, posmagiuAlexandru, georgeManofu, vaduvaBeniamin } from "../assets"
+import { tomaMadalin, posmagiuAlexandru, georgeManofu, vaduvaBeniamin, samir } from "../assets"
 
 export const testimonials = [
     {
-        id: "testimonial-1",
+        id: "1",
         alwaysVisible: "true",
         author: "Mihai",
         content: "Profesionalism, calitate, atentie la cerintele clientului. Unul dintre putinele saloane din Bucuresti unde gasesti cu adevarat asa ceva"
     },
     {
-        id: "testimonial-1",
+        id: "2",
         alwaysVisible: "true",
         author: "Iuli",
         content: "Cele mai bune servicii."
     },
     {
-        id: "testimonial-1",
+        id: "3",
         alwaysVisible: "true",
         author: "Alin",
         content: "Cele mai bune servicii , atmosfera de exceptie, personalul super minunat."
     },
     {
-        id: "testimonial-1",
+        id: "4",
         alwaysVisible: "true",
         author: "Marius",
         content: "Intordeauna serviciile au fost calitative."
     },
     {
-        id: "testimonial-1",
+        id: "5",
         alwaysVisible: "false",
         author: "Andrei",
         content: "Tunsori de calitate, atentia la detalii conteaza."
     },
     {
-        id: "testimonial-1",
+        id: "6",
         alwaysVisible: "false",
         author: "Ionut",
         content: "Experiență excelentă. Personal profesionist și rezultate excelente!"
     },
     {
-        id: "testimonial-1",
+        id: "7",
         alwaysVisible: "false",
         author: "Alex",
         content: "Servicii impecabile! Profesionalism și rezultate foarte bune de fiecare data."
     },
     {
-        id: "testimonial-1",
+        id: "8",
         alwaysVisible: "false",
         author: "Robert",
         content: "Personalul este foarte prietenos. Foarte multumit!"
@@ -92,9 +92,15 @@ export const teamMembers = [
     },
     {
         id: "4",
-        name: "George",
+        name: "Samir",
         src: georgeManofu,
         link: "https://mero.ro/p/armony?absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "5",
+        name: "George",
+        src: samir,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=65d1ceeb37b682f19c4af97c&absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 
