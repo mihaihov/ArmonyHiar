@@ -25,6 +25,7 @@ const Navbar = () => {
           <a href="/about" onClick={toggleNavbar}>About</a>
           <a href="/contact" onClick={toggleNavbar}>Contact</a>
           <a href="/gallery" onClick={toggleNavbar}>Gallery</a>
+          <a href="/team" onClick={toggleNavbar}>Echipa</a>
         </nav>
       </div>
     </div>
