@@ -22,11 +22,14 @@ const Navbar = () => {
           <video autoPlay loop muted playsInline className="navbar-image">
             <source src={navBarMobile_bg} type="video/mp4" />
           </video>
-          {/* <img src={armony3} alt="Background" className="navbar-image" /> */}
         </div>
         <nav className="navbar-content">
           {NavbarItems.map((item, index) => (
-            <a key={item.id} href={item.link} onClick={toggleNavbar}>{item.label}</a>
+            <a key={item.id} href={item.link} onClick={toggleNavbar}>
+              <h1 className=' text-5xl mb-3 md:text-6xl md:mb-4 lg:text-7xl lg:mb-10'>
+                {item.label}
+              </h1>
+            </a>
           ))}
         </nav>
       </div>

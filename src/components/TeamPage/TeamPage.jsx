@@ -12,7 +12,7 @@ import { logoWhite } from '../../assets';
 
 const TeamMember = ({ name, src, link }) => {
     return (
-        <div className="flex flex-col bg-white w-[400px] rounded-xl items-center py-4 my-4 shadow-white shadow-md ">
+        <div className="flex flex-col bg-white w-[355px] md:w-[400px] rounded-xl items-center py-4 my-4 shadow-white shadow-md ">
             <img src={src} className={`rounded-full w-[350px] h-[350px] object-cover ${name === 'Alexandru' || name === 'George' ? 'object-top' : 'object-bottom'}`} />
             <h1 className='mt-16 text-3xl tracking-wide font-poppins'>{name}</h1>
             <div>
