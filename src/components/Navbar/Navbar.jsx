@@ -16,10 +16,10 @@ const Navbar = () => {
       <button className="hamburger" onClick={toggleNavbar}>{isOpen ? 'X' : '☰'}</button>
       <div className={`navbar ${isOpen ? "open" : ""}`}>
         <div className="background-wrapper">
-          <video autoPlay loop muted className="navbar-video">
+          <video autoPlay loop muted playsInline className="navbar-video">
             <source src={video} type="video/mp4" />
           </video>
-          <video autoPlay loop muted className="navbar-image">
+          <video autoPlay loop muted playsInline className="navbar-image">
             <source src={navBarMobile_bg} type="video/mp4" />
           </video>
           {/* <img src={armony3} alt="Background" className="navbar-image" /> */}
