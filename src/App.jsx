@@ -9,11 +9,13 @@ import Navbar from "./components/Navbar/Navbar";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import TeamPage from "./components/TeamPage/TeamPage";
 import FloatingButton from "./components/FloatingButton/FloatingButton";
+import OpeningSoonPage from "./components/OpeningSoonPage/OpeningSoonPage";
 
 const App = () => {
   return (
     <div>
-      <FloatingButton />
+      <OpeningSoonPage />
+      {/* <FloatingButton />
       <Router>
         <Navbar />
         <Routes>
@@ -24,7 +26,7 @@ const App = () => {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/team" element={<TeamPage />} />
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   )
 }
