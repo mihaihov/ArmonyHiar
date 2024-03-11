@@ -110,7 +110,7 @@ const Homepage = () => {
 
 
       <div id="section1" ref={sectionRefs.current[0]} className="section1 w-screen h-screen">
-        <div className={`contact-container pb-16 md:pb-0 ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
+        <div className={`contact-container  mb-16 md:pb-0 ${visibleSection === 'section1' ? 'fadeIn2' : ''}`}>
           <div>{contactInformation.phoneNumber}</div>
           <div>{contactInformation.emailAddress}</div>
           <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">

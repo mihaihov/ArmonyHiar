@@ -7,7 +7,7 @@ const FooterNavbar = () => {
             <h1 className="text-[#8fa99e] text-5xl tracking-wide lg:text-5xl lg:tracking-widest">navigare</h1>
             <div className="flex flex-row justify-center gap-4 md:gap-8 lg:gap-0">
                 {NavbarItems.map((item, index) => (
-                    <h1 key={item.id} className="text-sm sm:text-base lg:text-3xl mt-8 font-semibold lg:font-light lg:ml-16 text-[#8fa99e] hover:text-black cursor-pointer"><a href={item.link}>{item.label}</a></h1>
+                    <h1 key={item.id} className="text-sm md:text-base lg:text-3xl mt-8 font-semibold lg:font-light lg:ml-16 text-[#8fa99e] hover:text-black cursor-pointer"><a href={item.link}>{item.label}</a></h1>
                 ))}
             </div>
             <div className="flex flex-row justify-center mt-0">
