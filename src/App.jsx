@@ -14,8 +14,7 @@ import OpeningSoonPage from "./components/OpeningSoonPage/OpeningSoonPage";
 const App = () => {
   return (
     <div>
-      <OpeningSoonPage />
-      {/* <FloatingButton />
+      <FloatingButton />
       <Router>
         <Navbar />
         <Routes>
@@ -26,7 +25,7 @@ const App = () => {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/team" element={<TeamPage />} />
         </Routes>
-      </Router> */}
+      </Router>
     </div>
   )
 }
