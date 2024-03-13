@@ -117,8 +117,8 @@ export const NavbarItems = [
     },
     {
         id: 3,
-        label: "Echipa",
-        link: "/team"
+        label: "Academie",
+        link: "/academy"
     },
     {
         id: 4,
@@ -127,11 +127,16 @@ export const NavbarItems = [
     },
     {
         id: 5,
+        label: "Echipa",
+        link: "/team"
+    },
+    {
+        id: 6,
         label: "Despre noi",
         link: "/about"
     },
     {
-        id: 6,
+        id: 7,
         label: "Contact",
         link: "/contact"
     },

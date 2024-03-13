@@ -10,6 +10,7 @@ import GalleryPage from "./components/GalleryPage/GalleryPage";
 import TeamPage from "./components/TeamPage/TeamPage";
 import FloatingButton from "./components/FloatingButton/FloatingButton";
 import OpeningSoonPage from "./components/OpeningSoonPage/OpeningSoonPage";
+import AcademyPage from "./components/AcademyPage/AcademyPage";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/academy" element={<AcademyPage />} />
         </Routes>
       </Router>
     </div>
