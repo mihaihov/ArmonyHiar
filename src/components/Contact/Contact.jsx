@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center pt-72">
         <img className="w-[300px]" src={logoBlack} />
         <div className="flex flex-row pt-20 w-full justify-center items-center">
-          <h1 className="text-[#8fa99e] font-poppins text-center">Armony Studio Bulevardul Unirii 51 Sector 3 Bucuresti</h1>
+          <h1 className="text-[#8fa99e] font-poppins text-center">{contactInformation.address}</h1>
         </div>
         <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">{contactInformation.phoneNumber}</h1>
         <h1 className="text-[#8fa99e] pt-4 font-poppins text-center">{contactInformation.emailAddress}</h1>

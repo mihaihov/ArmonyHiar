@@ -56,7 +56,7 @@ export const contactInformation = {
     emailAddress: "armonyfuture@gmail.com",
     phoneNumber: "0774504849",
     instagramPage: "https://www.instagram.com/armonyhairstudio",
-    address: "Bulevardul Unirii numarul 63, Sector 5 Bucuresti"
+    address: "Bulevardul Unirii numarul 63, Sector 3 Bucuresti"
 }
 
 export const howAreWe = {
