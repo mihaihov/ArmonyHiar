@@ -254,7 +254,7 @@
   text-transform: lowercase;
   fill: #8fa99e;
   color: #8fa99e;
-  padding-top:8em;
+  padding-top: 8em;
 }
 
 .btnSection button {
@@ -368,7 +368,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   padding-top: 3em;
 
@@ -561,7 +561,7 @@
 
   .subTitle {
     letter-spacing: 1px;
-  
+
   }
 
   .sectionThreeContainer {
@@ -691,8 +691,8 @@
 
   .mainTitle {
     font-size: 6vw;
-text-align: center;
-padding:0 1em;
+    text-align: center;
+    padding: 0 1em;
 
 
 
@@ -700,7 +700,7 @@ padding:0 1em;
 
   .subTitle {
     letter-spacing: 1px;
-    font-size:0.9em;
+    font-size: 0.9em;
   }
 
   .sectionThreeContainer {
@@ -728,15 +728,15 @@ padding:0 1em;
     display: grid;
     grid-template-columns: 1fr;
 
-  
+
 
   }
 
   .sectionThreeText div {
 
-  font-size: 1em;
+    font-size: 1em;
 
-  
+
 
   }
 
@@ -786,26 +786,26 @@ padding:0 1em;
   }
 
   .btnSection {
-    padding-top:3em;
+    padding-top: 3em;
   }
 
   .btnSection button {
-   font-size: 0.8em;
-  
+    font-size: 0.8em;
+
   }
 
   .sectionThreeContent .mainTitle {
 
     font-size: 3em;
 
-  
+
   }
 
   .sectionFourContent .mainTitle {
 
     font-size: 4em;
 
-  
+
   }
 
 }
