@@ -117,7 +117,7 @@ export const NavbarItems = [
     },
     {
         id: 3,
-        label: "Academie",
+        label: "Academy",
         link: "/academy"
     },
     {

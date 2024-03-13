@@ -45,15 +45,24 @@ const ServicesPage = () => {
       <div className="flex flex-col px-4 lg:px-0 pt-0 mg:pt-8 md:flex-row justify-center gap-8 lg:gap-20">
         <div className=" bg-[#9e8f8f] w-full lg:w-[500px] h-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-all ease-in-out duration-500 delay-0">
           <img src={hairCutSilhouette} className='w-[80%] h-[80%] rounded-md z-0' />
-          <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>TUNS</h1>
+          <div className='flex flex-col text-center justify-center'>
+            <h1 className='text-center text-[#8fa99e] font-poppins font-bold text-2xl'>TUNS</h1>
+            <h1 className='text-center text-[#313638] mt-8 font-poppins text-sm tracking-widest'>preturi incepand de la 90 RON</h1>
+          </div>
         </div>
         <div className="bg-[#9e8f8f] w-full lg:w-[500px] h-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-transform ease-in-out duration-500 delay-0">
           <img src={hairStyleSilhouette} className='w-[80%] h-[80%] rounded-md' />
-          <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>STYLING</h1>
+          <div className='flex flex-col text-center justify-center'>
+            <h1 className='text-center text-[#8fa99e] font-poppins font-bold text-2xl'>STYLING</h1>
+            <h1 className='text-center text-[#313638] mt-8 font-poppins text-sm tracking-widest'>preturi incepand de la 50 RON</h1>
+          </div>
         </div>
         <div className="bg-[#9e8f8f] w-full lg:w-[500px] shadow-xl hover:shadow-2xl hover:scale-105 transition-transform ease-in-out duration-500 delay-0">
           <img src={careSilhouette} className='w-[80%] h-[80%] rounded-md' />
-          <h1 className='text-center mt-8 text-[#8fa99e] font-poppins font-bold text-2xl'>SERVICII DE INGRIJIRE</h1>
+          <div className='flex flex-col text-center justify-center'>
+            <h1 className='text-center text-[#8fa99e] font-poppins font-bold text-2xl'>SERVICII DE INGRIJIRE</h1>
+            <h1 className='text-center text-[#313638] mt-8 mb-2 font-poppins text-sm tracking-widest'>preturi incepand de la 50 RON</h1>
+          </div>
         </div>
       </div>
 
