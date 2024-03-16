@@ -166,7 +166,7 @@ const Homepage = () => {
 
           </div>
           <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
-            <video autoPlay loop muted>
+            <video autoPlay loop muted playsInline>
               <source src={instagramReel1} type="video/mp4" />
             </video>
           </div>
