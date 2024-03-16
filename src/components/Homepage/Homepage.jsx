@@ -8,7 +8,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
 import { instagramColorIcon } from '../../assets';
-import { doneIcon } from '../../assets';
+import { styles } from '../../style';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -17,7 +17,29 @@ const Homepage = () => {
   const containerRef = useRef(null);
   const sectionRefs = useRef([useRef(null), useRef(null), useRef(null), useRef(null)]);
   const [visibleSection, setVisibleSection] = useState(null);
-  const [sent, setsend] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission logic here, such as sending the data to your backend API
+    console.log(formData);
+    // Reset the form after submission
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  };
 
 
   useEffect(() => {
@@ -182,21 +204,20 @@ const Homepage = () => {
 
             <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact</div>
             <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>DESPRE NOUL TAU STIL</div>
-            <div className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-              <input placeholder="NUME"></input>
-              <input placeholder="EMAIL"></input>
-              <input placeholder="TELEFON"></input>
-              <input placeholder="MESAJ"></input>
-            </div>
+            <form onSubmit={handleSubmit}>
+              <div className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
+                <input placeholder="NUME" type="text" id="name" name="name" value={formData.name} onChange={handleChange}></input>
+                <input placeholder="EMAIL" type="email" id="email" name="email" value={formData.email} onChange={handleChange}></input>
+                <input placeholder="TELEFON" type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} ></input>
+                <input placeholder="MESAJ" id="message" name="message" value={formData.message} onChange={handleChange} ></input>
 
-            <div className={`btnSection ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-              <button className={`${sent ? 'hidden' : 'visible'}`} onClick={() => {
-                setsend(!sent)
-              }}>trimite</button>
-              <img src={doneIcon} className={`${sent ? 'visible' : 'hidden'} w-[100px] transition-opacity duration-500 ease-in opacity-100`} />
-            </div>
+              </div>
+              <div className=" w-full flex flex-row justify-center items-center">
+                <button type='submit' className={`${styles.buttonTertiary} justify-center items-center`}>trimite</button>
+              </div>
+            </form>
 
-            <div className={`info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Armony | {contactInformation.address} | Doar cu Rezervare</div>
+            <div className={` mt-36 info ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>Armony | {contactInformation.address} | Doar cu Rezervare</div>
 
           </div>
         </div>
