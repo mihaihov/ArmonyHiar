@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className="navbar-content">
           {NavbarItems.map((item, index) => (
             <a key={item.id} href={item.link} onClick={toggleNavbar}>
-              <h1 className=' text-5xl mb-3 md:text-6xl md:mb-4 lg:text-7xl lg:mb-10'>
+              <h1 className=' text-5xl mb-3 md:text-6xl md:mb-4 lg:text-6xl lg:mb-10'>
                 {item.label}
               </h1>
             </a>
