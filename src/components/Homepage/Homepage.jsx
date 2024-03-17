@@ -9,6 +9,8 @@ import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
 import { instagramColorIcon } from '../../assets';
 import { styles } from '../../style';
+import axios from 'axios';
+import { Puff } from 'react-loader-spinner';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -23,15 +25,34 @@ const Homepage = () => {
     phone: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState(null);
+  const [sentMailMessage, setSentMailMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can handle form submission logic here, such as sending the data to your backend API
-    console.log(formData);
+    try {
+      setLoading(true);
+      const response = await axios.post('https://localhost:5044/api/email/sendemail', formData);
+      if (data.State === true) {
+        setData(response.data);
+        console.log(response.data);
+        setLoading(false);
+        setSentMailMessage("Mesaj trimis!");
+      }
+      else {
+        setLoading(false);
+        setSentMailMessage("Eroare! Reincarca pagina si incearca din nou!");
+      }
+    }
+    catch (error) {
+      setLoading(false);
+      setSentMailMessage("Eroare! Reincarca pagina si incearca din nou!");
+    }
     // Reset the form after submission
     setFormData({
       name: '',
@@ -212,8 +233,17 @@ const Homepage = () => {
                 <input placeholder="MESAJ" id="message" name="message" value={formData.message} onChange={handleChange} ></input>
 
               </div>
-              <div className=" w-full flex flex-row justify-center items-center">
-                <button type='submit' className={`${styles.buttonTertiary} justify-center items-center`}>trimite</button>
+              <div className={`${loading ? 'mt-2' : 'mt-0'} w-full flex flex-row justify-center items-center`}>
+                {loading ? (
+                  <Puff
+                    height="80"
+                    width="80"
+                    color="green"
+                    ariaLabel="Loading"
+                  />
+                ) : (
+                  <button type='submit' className={`${styles.buttonTertiary} ${loading ? ' invisible' : 'visible'} justify-center items-center`}>trimite</button>
+                )}
               </div>
             </form>
 
