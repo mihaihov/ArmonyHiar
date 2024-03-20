@@ -9,8 +9,8 @@ import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
 import { instagramColorIcon } from '../../assets';
 import { styles } from '../../style';
-import axios from 'axios';
 import { Puff } from 'react-loader-spinner';
+import { SendEmail } from '../../services/SendEmailService';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -20,45 +20,59 @@ const Homepage = () => {
   const sectionRefs = useRef([useRef(null), useRef(null), useRef(null), useRef(null)]);
   const [visibleSection, setVisibleSection] = useState(null);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    email: {
+      name: '',
+      senderEmail: '',
+      subject: '',
+      body: ''
+    }
   });
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
   const [sentMailMessage, setSentMailMessage] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      email: {
+        ...prevFormData.email,
+        [name]: value
+      }
+    }));
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      setLoading(true);
-      const response = await axios.post('https://localhost:5044/api/email/sendemail', formData);
-      if (data.State === true) {
-        setData(response.data);
-        console.log(response.data);
-        setLoading(false);
-        setSentMailMessage("Mesaj trimis!");
+    setLoading(true);
+    const response = await SendEmail(formData);
+    if (response) {
+      if (response.data) {
+        if (response.data.state) {
+          setSentMailMessage("Email trimis!");
+        }
+        else {
+          setSentMailMessage("Eroare! Reincarca pagina si incearca din nou!");
+        }
       }
       else {
-        setLoading(false);
         setSentMailMessage("Eroare! Reincarca pagina si incearca din nou!");
       }
     }
-    catch (error) {
-      setLoading(false);
+    else {
       setSentMailMessage("Eroare! Reincarca pagina si incearca din nou!");
     }
+    setLoading(false);
+
     // Reset the form after submission
     setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
+      email: {
+        name: '',
+        senderEmail: '',
+        subject: '',
+        body: ''
+      }
     });
   };
 
@@ -225,12 +239,12 @@ const Homepage = () => {
 
             <div className={`mainTitle ${visibleSection === 'section4' ? 'fadeIn3' : ''}`}>contact</div>
             <div className={`subTitle ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>DESPRE NOUL TAU STIL</div>
-            <form onSubmit={handleSubmit}>
-              <div className={`inputs ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
-                <input placeholder="NUME" type="text" id="name" name="name" value={formData.name} onChange={handleChange}></input>
-                <input placeholder="EMAIL" type="email" id="email" name="email" value={formData.email} onChange={handleChange}></input>
-                <input placeholder="TELEFON" type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} ></input>
-                <input placeholder="MESAJ" id="message" name="message" value={formData.message} onChange={handleChange} ></input>
+            <form onSubmit={handleSubmit} className='w-full'>
+              <div className={`flex flex-col gap-6 w-full ${visibleSection === 'section4' ? 'fadeIn4' : ''}`}>
+                <input className='border-b-2 rounded-b-xl text-xl text-center' placeholder="NUME" type="text" id="name" name="name" value={formData.email.name} onChange={handleChange}></input>
+                <input className='border-b-2 rounded-b-xl text-xl text-center' placeholder="EMAIL" type="email" id="senderEmail" name="senderEmail" value={formData.email.senderEmail} onChange={handleChange}></input>
+                <input className='border-b-2 rounded-b-xl text-xl text-center' placeholder="TITLU" type="text" id="subject" name="subject" value={formData.email.subject} onChange={handleChange} ></input>
+                <textarea className=' h-28 border-b-2 rounded-b-xl text-xl text-center' placeholder="MESAJ" type="text" id="body" name="body" value={formData.email.body} onChange={handleChange} ></textarea>
 
               </div>
               <div className={`${loading ? 'mt-2' : 'mt-0'} w-full flex flex-row justify-center items-center`}>
@@ -242,7 +256,10 @@ const Homepage = () => {
                     ariaLabel="Loading"
                   />
                 ) : (
-                  <button type='submit' className={`${styles.buttonTertiary} ${loading ? ' invisible' : 'visible'} justify-center items-center`}>trimite</button>
+                  <div className='flex flex-col items-center'>
+                    <button type='submit' className={`${styles.buttonTertiary} ${loading ? ' invisible' : 'visible'} justify-center items-center`}>trimite</button>
+                    <h1 className={`${sentMailMessage === "Email trimis!" ? ' text-green-600' : ' text-red-700'} mt-8 text-xl text-center font-poppins`}>{sentMailMessage}</h1>
+                  </div>
                 )}
               </div>
             </form>
