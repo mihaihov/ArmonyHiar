@@ -11,6 +11,7 @@ import { instagramColorIcon } from '../../assets';
 import { styles } from '../../style';
 import { Puff } from 'react-loader-spinner';
 import { SendEmail } from '../../services/SendEmailService';
+import { RetrieveIpAddress } from '../../services/RetrieveIpAddress';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -24,7 +25,8 @@ const Homepage = () => {
       name: '',
       senderEmail: '',
       subject: '',
-      body: ''
+      body: '',
+      clientip: ''
     }
   });
   const [loading, setLoading] = useState(false);
@@ -46,6 +48,7 @@ const Homepage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    formData.email.clientIp = await RetrieveIpAddress();
     const response = await SendEmail(formData);
     if (response) {
       if (response.data) {
