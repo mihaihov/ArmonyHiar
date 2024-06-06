@@ -10,11 +10,58 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';
 import { instagramReel1 } from '../../assets';
 import { instagramColorIcon } from '../../assets';
+import emailjs from 'emailjs-com';
 
 gsap.registerPlugin(ScrollToPlugin);
 
 
 const Homepage = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_npjokjl', "template_pou2f4i", e.target, 'YOUR_USER_ID')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+    e.target.reset();
+  }
+
+  const [formData, setFormData] = useState({
+    nume: '',
+    email: '',
+    telefon: '',
+    mesaj: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+    const response = await fetch('YOUR_BACKEND_ENDPOINT', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (response.ok) {
+      console.log('Form submitted successfully');
+    } else {
+      console.log('Submission failed');
+    }
+  };
+
+
   const containerRef = useRef(null);
   const sectionRefs = useRef([useRef(null), useRef(null), useRef(null), useRef(null)]);
   const [visibleSection, setVisibleSection] = useState(null);
