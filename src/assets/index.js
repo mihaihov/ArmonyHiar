@@ -29,6 +29,8 @@ import georgeManofu from './GeorgeManofu.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
 import doneIcon from './doneIcon.svg'
 import samir from './samir.jpeg'
+import armando from './Armando.jpg'
+import ionut from './Ionut.jpg'
 
 export {
     contactBackground,
@@ -56,5 +58,7 @@ export {
     georgeManofu,
     navBarMobile_bg,
     doneIcon,
-    samir
+    samir,
+    armando,
+    ionut
 }

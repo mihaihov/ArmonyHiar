@@ -1,5 +1,5 @@
 import { careSilhouette } from "../assets"
-import { tomaMadalin, posmagiuAlexandru, georgeManofu, vaduvaBeniamin, samir } from "../assets"
+import { tomaMadalin, posmagiuAlexandru, georgeManofu, vaduvaBeniamin, samir, armando, ionut } from "../assets"
 
 export const testimonials = [
     {
@@ -101,6 +101,18 @@ export const teamMembers = [
         name: "George",
         src: samir,
         link: "https://mero.ro/p/armony?page=select_services&workerIds=65d1ceeb37b682f19c4af97c&absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "6",
+        name: "Armando",
+        src: armando,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=66a74b01c71388f9368360be&absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "7",
+        name: "Ionut",
+        src: ionut,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=665c2b5e9e244ce10dbf4657&absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 
