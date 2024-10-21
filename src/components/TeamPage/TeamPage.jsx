@@ -1,19 +1,14 @@
 import React from 'react'
-import { logoBlack, tomaMadalin } from '../../assets';
 import { teamMembers, testimonials } from '../../constants';
 import { styles } from '../../style';
 import FooterNavbar from '../FooterNavbar/FooterNavbar';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { logoWhite } from '../../assets';
 
 
 const TeamMember = ({ name, src, link }) => {
     return (
         <div className="flex flex-col bg-white rounded-xl items-center py-4 my-4 shadow-white shadow-md ">
-            <img src={src} className={`rounded-full w-[350px] h-[350px] object-cover ${name === 'Alexandru' || name === 'George' || name === 'Ionut' || name == "Armando" ? 'object-top' : 'object-bottom'}`} />
+            <img src={src} className={`rounded-full w-[350px] h-[350px] object-cover ${name === 'Alexandru' || name === 'George' || name === 'Vasi' ? 'object-top' : 'object-bottom'}`} />
             <h1 className='mt-16 text-3xl tracking-wide font-poppins'>{name}</h1>
             <div>
                 <button className={`${styles.buttonTertiary}`}><a href={link} target='_blank'>Fa o programare</a></button>
