@@ -12,7 +12,7 @@ import FooterNavbar from "../FooterNavbar/FooterNavbar";
 const Contact = () => {
   return (
     <div className="bg-white">
-      <img className="w-screen h-screen object-none object-top brightness-75" src={contactPageBackground_lg} />
+      <img className="w-screen h-screen object-none object-top brightness-75" src={contactPageBackground_lg} loading="lazy" />
       <img className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] pt-12" src={logoWhite} />
       <div className="absolute right-0 top-0 pt-12 pr-5 flex flex-col slow-appear lg:flex-row">
         <div className="flex flex-row pb-2  transition-all duration-500 ease-in-out lg:pb-0 opacity-0 md:opacity-100">
