@@ -7,11 +7,10 @@ import {
   phoneIcon,
   armony1,
   armony2,
-  armony3
+  armony3,
+  AboutUsBackground
 } from "../../assets";
-import { logo } from "../../assets";
 import { logoWhite } from "../../assets";
-import { instagramIcon } from "../../assets";
 import { styles } from '../../style';
 import { useState } from "react";
 import { testimonials } from "../../constants";
@@ -41,7 +40,7 @@ function About() {
   return (
     <div className="overflow-hidden relative">
       <div className="bg-black h-screen w-screen z-0 relative">
-        <div className="absolute bg-cover bg-fixed h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${contactBackground})` }}></div>
+        <div className="absolute bg-cover bg-fixed h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${AboutUsBackground})` }}></div>
         <div className="absolute bg-cover bg-fiexed h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
         <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
           <img src={logoWhite} className="w-[300px]" />
@@ -65,14 +64,14 @@ function About() {
         </div>
       </div>
       <div className="w-full mt-10 flex flex-col lg:flex-row">
-        <img src={armony2} className="mx-3 object-cover h-[600px] lg:mx-0 lg:object-none lg:w-[65%] lg:h-[800px]" />
+        <img src={armony2} className="mx-3 object-cover h-[600px] lg:mx-0 lg:w-[65%] lg:h-[800px]" />
         <div className="bg-slate-400 ml-20 -mt-36 shadow-lg flex flex-col items-center lg:w-[65%] lg:h-[500px] lg:-ml-96 lg:mt-96 lg:items-end">
           <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pr-10 lg:text-5xl lg:tracking-wider">{howAreWe.title}</h1>
           <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{howAreWe.contentOne}<br /><br />{howAreWe.contentTwo}</p>
         </div>
       </div>
       <div className="w-full flex flex-col lg:flex-row-reverse">
-        <img src={armony3} className="ml-3 object-cover h-[600px] mt-5 lg:-mt-10 lg:mr-10 lg:mx-0 lg:object-none lg:w-[50%] lg:h-[650px] z-0" />
+        <img src={armony3} className="ml-3 object-cover h-[600px] mt-5 lg:-mt-10 lg:mr-10 lg:mx-0 lg:w-[50%] lg:h-[650px] z-0" />
         <div className="bg-slate-400 shadow-lg ml-8 -mt-48 flex flex-col items-center lg:w-[50%] lg:mt-72 lg:items-start lg:-mr-36 z-10">
           <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pl-10 lg:text-5xl lg:tracking-wider">{aboutArmony.title}</h1>
           <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{aboutArmony.contentOne}  <br /> <br /> {aboutArmony.contentTwo}</p>

@@ -6,7 +6,7 @@ import "./Homepage.css";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { contactInformation } from '../../constants';
-import { instagramReel1 } from '../../assets';
+import { ArmonyReel } from '../../assets';
 import { instagramColorIcon } from '../../assets';
 import { styles } from '../../style';
 import { Puff } from 'react-loader-spinner';
@@ -227,7 +227,7 @@ const Homepage = () => {
           </div>
           <div className={`sectionThreePhoto ${visibleSection === 'section3' ? 'fadeIn2' : ''}`}>
             <video autoPlay loop muted playsInline>
-              <source src={instagramReel1} type="video/mp4" />
+              <source src={ArmonyReel} type="video/mp4" />
             </video>
           </div>
         </div>

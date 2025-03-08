@@ -1,4 +1,5 @@
 import contactBackground from './TestBackground1.jpg';
+import AboutUsBackground from './AboutUsBackground.jpg';
 import logo from './Logo.png'
 import logoWhite from './Armony-White.png'
 import logoBlack from './Armony-Black.png'
@@ -17,13 +18,12 @@ import p3 from "./p3.jpg";
 import p4 from "./p4.jpg";
 import video from "./video.mp4"
 import contactPageBackground_lg from './contactPageBackground_lg.jpg'
-import instagramReel1 from './instagramReel1.mp4'
+import ArmonyReel from './ArmonyReel.mp4'
 import instagramPhoto2 from './instagramPhoto2.jpg'
 import hairCutSilhouette from './hairCutSilhouette.svg'
 import hairStyleSilhouette from './hairStyleSilhouette.svg'
 import careSilhouette from './careSilhouette.svg'
 import tomaMadalin from './TomaMadalin.jpeg'
-import posmagiuAlexandru from './PosmagiuAlexandru.jpeg'
 import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
 import georgeManofu from './GeorgeManofu.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
@@ -34,6 +34,7 @@ import iulian from './Iulian.jpeg'
 
 export {
     contactBackground,
+    AboutUsBackground,
     logo,
     logoWhite,
     instagramIcon,
@@ -47,14 +48,13 @@ export {
     bgService, p1, p2, p3, p4, video,
     contactPageBackground_lg,
     logoBlack,
-    instagramReel1,
+    ArmonyReel,
     instagramPhoto2,
     hairCutSilhouette,
     hairStyleSilhouette,
     careSilhouette,
     tomaMadalin,
     vaduvaBeniamin,
-    posmagiuAlexandru,
     georgeManofu,
     navBarMobile_bg,
     doneIcon,
