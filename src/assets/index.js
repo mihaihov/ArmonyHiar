@@ -12,10 +12,6 @@ import armony1 from './Armony1.jpg';
 import armony2 from './Armony2.jpg';
 import armony3 from './Armony3.jpg'
 import bgService from './bgService.jpg';
-import p1 from "./p1.jpg";
-import p2 from "./p2.jpg";
-import p3 from "./p3.jpg";
-import p4 from "./p4.jpg";
 import video from "./video.mp4"
 import contactPageBackground_lg from './contactPageBackground_lg.webp'
 import ArmonyReel from './ArmonyReel.mp4'
@@ -26,7 +22,6 @@ import careSilhouette from './careSilhouette.svg'
 import tomaMadalin from './TomaMadalin.jpeg'
 import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
-import doneIcon from './doneIcon.svg'
 import samir from './Sami.jpeg'
 import vasi from './Vasi.jpeg'
 import iulian from './Iulian.jpeg'
@@ -44,7 +39,7 @@ export {
     armony1,
     armony2,
     armony3,
-    bgService, p1, p2, p3, p4, video,
+    bgService, video,
     contactPageBackground_lg,
     logoBlack,
     ArmonyReel,
@@ -55,7 +50,6 @@ export {
     tomaMadalin,
     vaduvaBeniamin,
     navBarMobile_bg,
-    doneIcon,
     samir,
     vasi,
     iulian
