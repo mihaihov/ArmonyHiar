@@ -25,10 +25,9 @@ import hairStyleSilhouette from './hairStyleSilhouette.svg'
 import careSilhouette from './careSilhouette.svg'
 import tomaMadalin from './TomaMadalin.jpeg'
 import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
-import georgeManofu from './GeorgeManofu.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
 import doneIcon from './doneIcon.svg'
-import samir from './samir.jpeg'
+import samir from './Sami.jpeg'
 import vasi from './Vasi.jpeg'
 import iulian from './Iulian.jpeg'
 
@@ -55,7 +54,6 @@ export {
     careSilhouette,
     tomaMadalin,
     vaduvaBeniamin,
-    georgeManofu,
     navBarMobile_bg,
     doneIcon,
     samir,
