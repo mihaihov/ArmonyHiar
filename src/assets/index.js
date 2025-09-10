@@ -17,7 +17,7 @@ import p2 from "./p2.jpg";
 import p3 from "./p3.jpg";
 import p4 from "./p4.jpg";
 import video from "./video.mp4"
-import contactPageBackground_lg from './contactPageBackground_lg.jpg'
+import contactPageBackground_lg from './contactPageBackground_lg.webp'
 import ArmonyReel from './ArmonyReel.mp4'
 import instagramPhoto2 from './instagramPhoto2.jpg'
 import hairCutSilhouette from './hairCutSilhouette.svg'

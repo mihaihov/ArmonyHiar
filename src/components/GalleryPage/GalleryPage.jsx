@@ -27,12 +27,14 @@ const GalleryPage = () => {
             <div className='grid grid-cols-2 mx-4 gap-2'>
                 <div>
                     {slides.filter((slide, index) => index % 2 !== 0).map((slide, index) => (
-                        <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexOdd(index)) }} />
+                        <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexOdd(index)) }} 
+                        loading='lazy'/>
                     ))}
                 </div>
                 <div>
                     {slides.filter((slide, index) => index % 2 === 0).map((slide, index) => (
-                        <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexEven(index)) }} />
+                        <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexEven(index)) }} 
+                        loading='lazy'/>
                     ))}
                 </div>
 
