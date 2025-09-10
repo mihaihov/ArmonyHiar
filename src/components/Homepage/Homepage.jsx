@@ -174,7 +174,7 @@ const Homepage = () => {
           <div>{contactInformation.phoneNumber}</div>
           <div>{contactInformation.emailAddress}</div>
           <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  md:opacity-100  transition-all duration-500 ease-in-out" />
+            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  md:opacity-100  transition-all duration-500 ease-in-out" alt="Instagram icon" />
           </a>
         </div>
 
@@ -190,7 +190,7 @@ const Homepage = () => {
         <div className="sectionTwoContainer">
 
           <div className={`sectionTwoPhoto ${visibleSection === 'section2' ? 'fadeIn2' : ''}`}>
-            <img src="/images/img2.jpg" alt="photo" />
+            <img src="/images/img2.jpg" alt="Barbershop client haircut" />
           </div>
           <div className="sectionTwoContent">
 
@@ -236,7 +236,7 @@ const Homepage = () => {
         <div className="sectionFourContainer">
 
           <div className={`sectionTwoPhoto ${visibleSection === 'section4' ? 'fadeIn2' : ''}`}>
-            <img src="/images/img4.jpg" alt="photo" />
+            <img src="/images/img4.jpg" alt="Barbershop finished style" />
           </div>
           <div className="sectionFourContent">
 

@@ -20,7 +20,7 @@ const GalleryPage = () => {
     return (
         <div className='flex flex-col justify-center bg-[#313638]'>
             <div className='w-full flex flex-col items-center mt-8 mb-20'>
-                <img src={logoBlack} className='w-[200px] md:w-[300px]' />
+                <img src={logoBlack} className='w-[200px] md:w-[300px]' alt="Armony Hair Studio logo" />
                 <div className="text-xl mt-8 font-poppins tracking-widest text-zinc-500">Galerie</div>
             </div>
 
@@ -28,13 +28,13 @@ const GalleryPage = () => {
                 <div>
                     {slides.filter((slide, index) => index % 2 !== 0).map((slide, index) => (
                         <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexOdd(index)) }} 
-                        loading='lazy'/>
+                        loading='lazy' alt="Barbershop gallery image"/>
                     ))}
                 </div>
                 <div>
                     {slides.filter((slide, index) => index % 2 === 0).map((slide, index) => (
                         <img key={index} src={slide.src} className='object-cover rounded-md mb-1 cursor-pointer' onClick={() => { setIndex(GetIndexEven(index)) }} 
-                        loading='lazy'/>
+                        loading='lazy' alt="Barbershop gallery image"/>
                     ))}
                 </div>
 

@@ -43,19 +43,19 @@ function About() {
         <div className="absolute bg-cover bg-fixed h-screen w-[100%] opacity-60 invisible md:visible z-1" style={{ backgroundImage: `url(${AboutUsBackground})` }}></div>
         <div className="absolute bg-cover bg-fiexed h-screen w-[100%] opacity-60 visible md:invisible z-1" style={{ backgroundImage: `url(${armony1})` }}></div>
         <div className="z-2 absolute left-1/2 -translate-x-1/2 pt-20">
-          <img src={logoWhite} className="w-[300px]" />
+          <img src={logoWhite} className="w-[300px]" alt="Armony Hair Studio logo" />
         </div>
         <div className="absolute right-0 top-0 pt-12 pr-4 mr-4 flex flex-col slow-appear lg:flex-row">
           <div className="flex flex-row pb-2  transition-all duration-500 ease-in-out lg:pb-0 opacity-0 md:opacity-100">
-            <img src={phoneIcon} className="w-[24px] h-[24px]" />
+            <img src={phoneIcon} className="w-[24px] h-[24px]" alt="Phone icon" />
             <p className="text-white pr-8 poppins text-sm">{contactInformation.phoneNumber}</p>
           </div>
           <div className="flex flex-row transition-all duration-500 ease-in-out pb-2 lg:pb-0 opacity-0 md:opacity-100">
-            <img src={mailIcon} className="w-[24px] h-[24px]" />
+            <img src={mailIcon} className="w-[24px] h-[24px]" alt="Mail icon" />
             <p className="text-white pr-8 poppins text-sm">{contactInformation.emailAddress}</p>
           </div>
           <a href={`${contactInformation.instagramPage}`} target="_blank" rel="noopener noreferrer">
-            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" />
+            <img src={instagramColorIcon} className="w-[30px] h-[30px] min-w-6 min-h-6  opacity-0 md:opacity-100  transition-all duration-500 ease-in-out" alt="Instagram icon" />
           </a>
         </div>
         <div className="absolute  inset-x-0 bottom-0 flex-col mb-32 slow-appear">
@@ -64,14 +64,14 @@ function About() {
         </div>
       </div>
       <div className="w-full mt-10 flex flex-col lg:flex-row">
-        <img src={armony2} className="mx-3 object-cover h-[600px] lg:mx-0 lg:w-[65%] lg:h-[800px]" />
+  <img src={armony2} className="mx-3 object-cover h-[600px] lg:mx-0 lg:w-[65%] lg:h-[800px]" alt="Barbershop team at work" />
         <div className="bg-slate-400 ml-20 -mt-36 shadow-lg flex flex-col items-center lg:w-[65%] lg:h-[500px] lg:-ml-96 lg:mt-96 lg:items-end">
           <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pr-10 lg:text-5xl lg:tracking-wider">{howAreWe.title}</h1>
           <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{howAreWe.contentOne}<br /><br />{howAreWe.contentTwo}</p>
         </div>
       </div>
       <div className="w-full flex flex-col lg:flex-row-reverse">
-        <img src={armony3} className="ml-3 object-cover h-[600px] mt-5 lg:-mt-10 lg:mr-10 lg:mx-0 lg:w-[50%] lg:h-[650px] z-0" />
+  <img src={armony3} className="ml-3 object-cover h-[600px] mt-5 lg:-mt-10 lg:mr-10 lg:mx-0 lg:w-[50%] lg:h-[650px] z-0" alt="Barbershop interior" />
         <div className="bg-slate-400 shadow-lg ml-8 -mt-48 flex flex-col items-center lg:w-[50%] lg:mt-72 lg:items-start lg:-mr-36 z-10">
           <h1 className="text-3xl pt-12  font-poppins text-white lg:pt-20 lg:pl-10 lg:text-5xl lg:tracking-wider">{aboutArmony.title}</h1>
           <p className="text-white pt-5 items-start text-base lg:pt-10 p-5 lg:p-16 lg:text-xl">{aboutArmony.contentOne}  <br /> <br /> {aboutArmony.contentTwo}</p>
