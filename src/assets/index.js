@@ -24,6 +24,8 @@ import vaduvaBeniamin from './VaduvaBeniamin.jpeg'
 import navBarMobile_bg from './navBarVideo_mobile.mp4'
 import samir from './Sami.jpeg'
 import vasi from './Vasi.jpeg'
+import dumi from './Dumi.jpeg'
+import mirel from './Mirel.jpeg'
 
 export {
     contactBackground,
@@ -50,5 +52,7 @@ export {
     vaduvaBeniamin,
     navBarMobile_bg,
     samir,
-    vasi
+    vasi,
+    dumi,
+    mirel
 }

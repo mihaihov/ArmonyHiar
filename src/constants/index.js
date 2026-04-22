@@ -1,4 +1,4 @@
-import { tomaMadalin, vaduvaBeniamin, samir, vasi } from "../assets"
+import { tomaMadalin, vaduvaBeniamin, samir, vasi, dumi, mirel } from "../assets"
 
 export const testimonials = [
     {
@@ -94,6 +94,18 @@ export const teamMembers = [
         name: "Vasi",
         src: vasi,
         link: "https://mero.ro/p/armony?page=select_services&workerIds=670789ed0b885f09be5939cb&absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "5",
+        name: "Dumi",
+        src: dumi,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=696e4d59ef0c790d5adf2177&absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "6",
+        name: "Mirel",
+        src: mirel,
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=697384cb8851175fcee0d432&absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 
