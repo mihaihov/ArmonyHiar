@@ -105,7 +105,7 @@ export const teamMembers = [
         id: "6",
         name: "Mirel",
         src: mirel,
-        link: "https://mero.ro/p/armony?page=select_services&workerIds=696e4d59ef0c790d5adf2177&absp=company_details_deeplink&campaignId=&campaignSource="
+        link: "https://mero.ro/p/armony?page=select_services&workerIds=697384cb8851175fcee0d432&absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 
