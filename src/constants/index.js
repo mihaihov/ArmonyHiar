@@ -1,4 +1,4 @@
-import { tomaMadalin, vaduvaBeniamin, samir, vasi } from "../assets"
+import { tomaMadalin, vaduvaBeniamin, samir, vasi, dumi, mirel } from "../assets"
 
 export const testimonials = [
     {
@@ -66,7 +66,7 @@ export const howAreWe = {
 
 export const aboutArmony = {
     title: "Despre Armony",
-    contentOne: "Suntem o echipă pasionată și dedicată, cu o misiune clară: să oferim servicii de cea mai înaltă calitate și să creăm experiențe memorabile pentru clienții noștri. Ne concentrăm pe nevoile și dorințele fiecărui client și ne străduim să le îndeplinim cu profesionalism și atenție la detalii. Cu o combinație de talent, creativitate și experiență, suntem aici să vă ajutăm să vă simțiți și să arătați la fel de bine pe cât vă doriți.",
+    contentOne: "Suntem o echipă pasionată și dedicată, cu o misiune clară: să oferim servicii de cea mai înaltă calitate și să creăm experiențe memorabele pentru clienții noștri. Ne concentrăm pe nevoile și dorințele fiecărui client și ne străduim să le îndeplinim cu profesionalism și atenție la detalii. Cu o combinație de talent, creativitate și experiență, suntem aici să vă ajutăm să vă simțiți și să arătați la fel de bine pe cât vă doriți.",
     contentTwo: "La Armony, suntem mai mult decât un simplu barbershop - suntem o comunitate care se angajează să vă ajute să vă exprimați și să vă îngrijiți de aspectul personal în cel mai autentic și plăcut mod posibil."
 }
 
@@ -94,6 +94,18 @@ export const teamMembers = [
         name: "Vasi",
         src: vasi,
         link: "https://mero.ro/p/armony?page=select_services&workerIds=670789ed0b885f09be5939cb&absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "5",
+        name: "Dumi",
+        src: dumi,
+        link: "https://mero.ro/p/armony?absp=company_details_deeplink&campaignId=&campaignSource="
+    },
+    {
+        id: "6",
+        name: "Mirel",
+        src: mirel,
+        link: "https://mero.ro/p/armony?absp=company_details_deeplink&campaignId=&campaignSource="
     }
 ]
 
