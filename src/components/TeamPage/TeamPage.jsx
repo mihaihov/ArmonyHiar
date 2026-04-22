@@ -8,7 +8,7 @@ import { logoWhite } from '../../assets';
 const TeamMember = ({ name, src, link }) => {
     return (
         <div className="flex flex-col bg-white rounded-xl items-center py-4 my-4 shadow-white shadow-md ">
-            <img src={src} className={`rounded-full w-[350px] h-[350px] object-cover ${name === 'Alexandru' || name === 'George' || name === 'Vasi' ? 'object-top' : 'object-bottom'}`} alt={`Barber ${name} portrait`} />
+            <img src={src} className={`rounded-full w-[350px] h-[350px] object-cover ${name === 'Alexandru' || name === 'George' || name === 'Vasi' || name === 'Mirel' ? 'object-top' : 'object-bottom'}`} alt={`Barber ${name} portrait`} />
             <h1 className='mt-16 text-3xl tracking-wide font-poppins'>{name}</h1>
             <div>
                 <button className={`${styles.buttonTertiary}`}><a href={link} target='_blank'>Fa o programare</a></button>
